@@ -1,0 +1,13 @@
+{
+  "title": "如何教妹子学Python",
+  "plugins": ["github", "pyshell"],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/runforever"
+    },
+    "pyshell": {
+      "host": "http://127.0.0.1:5000"
+    }
+  },
+  "language": "zh-hans"
+}
