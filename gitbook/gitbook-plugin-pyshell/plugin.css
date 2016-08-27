@@ -1,0 +1,45 @@
+#py-shell-toggle-btn {
+    display: block;
+    width: 82px;
+    height: 76px;
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #171717;
+    color: #409611;
+    font-weight: bold;
+    z-index: 102;
+    padding: 6px 0px 0px 4px;
+    border: 1px solid #9B9C9C;
+}
+
+#py-shell-btn-cursor {
+    background-color: #409611;
+}
+
+#py-shell-modal {
+    background-color: #F5F5F5;
+    position: fixed;
+    z-index: 101;
+    bottom: 0;
+    width: 100%;
+}
+
+.py-shell-container {
+    padding: 16px;
+}
+
+#py-shell-ipython {
+    background-color: #091E27;
+    color: #708284;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.py-shell-editor-molokai {
+    background-color: #0F0F0F;
+    color: #9D3EFF;
+    font-size: 18px;
+    font-weight: bold;
+}
