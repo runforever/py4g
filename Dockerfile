@@ -1,4 +1,4 @@
-FROM daocloud.io/library/node:6.4.0
+FROM daocloud.io/library/node:6.3.1
 RUN npm install gitbook-cli -g
 RUN mkdir /book
 WORKDIR /book
