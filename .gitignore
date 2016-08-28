@@ -16,3 +16,4 @@ _book
 *.pdf
 
 .deploy_book
+*.pyc
