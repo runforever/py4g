@@ -13,7 +13,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
 
             '<div id="py-shell-left" class="pure-u-1-2 py-shell-container">',
             '<p>',
-            'Python 解释器 REPL，使用 Enter 运行代码',
+            'Python 解释器 REPL，使用 Enter 运行代码，只能运行一行代码',
             '<textarea id="py-shell-ipython" class="pure-u-1" rows="16"></textarea>',
             '</p>',
             '</div>',
