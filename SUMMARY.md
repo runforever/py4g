@@ -17,7 +17,7 @@
 * 基础
     * [基本数据类型](chapter-2/basic_type.md)
     * [列表、变量、流程控制](chapter-2/variables.md)
-    * [元组、字典](#)
+    * [元组、字典、集合](chapter-2/tuple_dict.md)
     * [函数、模块、脚本文件](#)
     * [Bug 是什么](#)
     * [面向对象编程](#)

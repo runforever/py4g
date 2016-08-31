@@ -3,10 +3,7 @@
   "plugins": ["github", "pyshell"],
   "pluginsConfig": {
     "github": {
-      "url": "https://github.com/runforever"
-    },
-    "pyshell": {
-      "host": "http://127.0.0.1:5000"
+      "url": "https://github.com/runforever/py4g/issues"
     }
   },
   "language": "zh-hans"

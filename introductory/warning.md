@@ -34,4 +34,6 @@
 
 
 #### 联系我
-大家有问题就通过邮箱联系我吧，**c.chenchao.c@gmail.com**
+大家如果遇到什么问题，可以随时给我反馈，反馈地址 [https://github.com/runforever/py4g/issues](https://github.com/runforever/py4g/issues)，每一页书的右上角也可以反馈。
+
+![feedback](http://o73q6k64s.bkt.clouddn.com/3391E532-FFFC-4B37-83AC-FF12A3FBA9E2.png)
