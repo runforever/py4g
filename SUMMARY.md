@@ -19,8 +19,9 @@
     * [列表、变量、流程控制](chapter-2/variables.md)
     * [元组、字典、集合](chapter-2/tuple_dict.md)
     * [聊聊开发工具](chapter-2/dev_tool.md)
-    * [函数、模块、脚本文件](#)
-    * [Bug 是什么](#)
+    * [函数、脚本文件](chapter-2/function.md)
+    * [模块](#)
+    * [Bug 和 Debug](#)
     * [面向对象编程](#)
 
 * Pythonic
