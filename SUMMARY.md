@@ -20,7 +20,7 @@
     * [元组、字典、集合](chapter-2/tuple_dict.md)
     * [聊聊开发工具](chapter-2/dev_tool.md)
     * [函数、脚本文件](chapter-2/function.md)
-    * [模块](#)
+    * [模块、包、设计](chapter-2/module.md)
     * [Bug 和 Debug](#)
     * [面向对象编程](#)
 
