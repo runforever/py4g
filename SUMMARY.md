@@ -21,7 +21,7 @@
     * [聊聊开发工具](chapter-2/dev_tool.md)
     * [函数、脚本文件](chapter-2/function.md)
     * [模块、包、设计](chapter-2/module.md)
-    * [Bug 和 Debug](#)
+    * [Bug 和 Debug](chapter-2/debug.md)
     * [面向对象编程](#)
 
 * Pythonic

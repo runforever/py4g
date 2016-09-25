@@ -11,6 +11,7 @@ def caculation(expression):
     ret_stack = []
     expression = expression.strip().replace(' ', '')
 
+    import pdb; pdb.set_trace()
     for element in expression:
         # 如果不是符号，将数字放入栈中
         if element not in '+-*/':
