@@ -25,7 +25,7 @@
     * [面向对象编程](chapter-2/oop.md)
 
 * Pythonic
-    * [装饰器](#)
+    * [装饰器](chapter-3/decorater.md)
     * [列表解析](#)
     * [字典解析](#)
 
