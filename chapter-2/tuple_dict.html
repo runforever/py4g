@@ -17,6 +17,14 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
                 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
                 
             
@@ -611,8 +619,12 @@ bar_set = set([2, 4, 5])</code></pre>
 </li>
 <li>&#x9047;&#x89C1;&#x8FD0;&#x7B97;&#x7B26;&#x53F7;&#xFF0C;&#x5C06;&#x6808;&#x9876;&#x7684;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#x5F39;&#x51FA;&#x6765;&#xFF0C;&#x5F97;&#x51FA;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x540E;&#x518D;&#x538B;&#x5165;&#x6808;&#x4E2D;&#x3002;
 </li></ol>
-<p>&#x6211;&#x4EEC;&#x6765;&#x8BA1;&#x7B97; <code>1 2 + 5 *</code> &#x4E5F;&#x5C31;&#x662F;&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F; <code>(1 + 2) * 3</code></p><p><img alt="1,2,3" src="http://o73q6k64s.bkt.clouddn.com/img_0022.jpg">
-<img alt="4,5" src="http://o73q6k64s.bkt.clouddn.com/img_0024.jpg"></p><p>&#x4EE3;&#x7801;&#x5B9E;&#x73B0;:</p><pre><code># &#x5B9A;&#x4E49;&#x6808;
+<p>&#x6211;&#x4EEC;&#x6765;&#x8BA1;&#x7B97; <code>1 2 + 5 *</code> &#x4E5F;&#x5C31;&#x662F;&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F; <code>(1 + 2) * 3</code></p><p>     <a href="http://o73q6k64s.bkt.clouddn.com/img_0022.jpg" title="1,2,3" target="_blank" class="fancybox">
+       <img src="http://o73q6k64s.bkt.clouddn.com/img_0022.jpg" alt="1,2,3">
+     </a>
+     <a href="http://o73q6k64s.bkt.clouddn.com/img_0024.jpg" title="4,5" target="_blank" class="fancybox">
+       <img src="http://o73q6k64s.bkt.clouddn.com/img_0024.jpg" alt="4,5">
+     </a></p><p>&#x4EE3;&#x7801;&#x5B9E;&#x73B0;:</p><pre><code># &#x5B9A;&#x4E49;&#x6808;
 ret_stack = []
 
 # &#x5B9A;&#x4E49;&#x8868;&#x8FBE;&#x5F0F;
@@ -686,7 +698,7 @@ eval(&apos;3 * 5&apos;)</code></pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"元组、字典、集合","level":"2.2.3","depth":2,"next":{"title":"聊聊开发工具","level":"2.2.4","depth":2,"path":"chapter-2/dev_tool.md","ref":"chapter-2/dev_tool.md","articles":[]},"previous":{"title":"列表、变量、流程控制","level":"2.2.2","depth":2,"path":"chapter-2/variables.md","ref":"chapter-2/variables.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","pyshell"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/runforever/py4g/issues"},"pyshell":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"如何教妹子学Python","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter-2/tuple_dict.md","mtime":"2016-10-07T15:14:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-30T14:01:54.019Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"元组、字典、集合","level":"2.2.3","depth":2,"next":{"title":"聊聊开发工具","level":"2.2.4","depth":2,"path":"chapter-2/dev_tool.md","ref":"chapter-2/dev_tool.md","articles":[]},"previous":{"title":"列表、变量、流程控制","level":"2.2.2","depth":2,"path":"chapter-2/variables.md","ref":"chapter-2/variables.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","fancybox","pyshell"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/runforever/py4g/issues"},"pyshell":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"如何教妹子学Python","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter-2/tuple_dict.md","mtime":"2016-10-07T15:14:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-31T02:33:16.231Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -697,6 +709,22 @@ eval(&apos;3 * 5&apos;)</code></pre>
     
         
         <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
         
     
         
