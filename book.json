@@ -1,6 +1,6 @@
 {
   "title": "如何教妹子学Python",
-  "plugins": ["github", "pyshell"],
+  "plugins": ["github", "fancybox", "pyshell"],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/runforever/py4g/issues"
