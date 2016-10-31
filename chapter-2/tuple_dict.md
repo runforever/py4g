@@ -15,7 +15,7 @@
 元组(tuple)和 list 的功能类似，都是用来表示有序数据的集合，区别是 tuple 不能被修改，也就是说你不能往一个定义好的 tuple 里面添加数据，修改里面的数据，删除里面的数据。
 
 Python 的 tuple 语法
-```
+``` python
 # 定义
 fruit_tuple = ("apple", "mongo", "pear", "grape")
 
@@ -37,7 +37,7 @@ merge_tuple = foo_tuple + bar_tuple
 **问题**: 实现一个小字典，1, 2, 3, 4, 5 这些页码分别对应 a, b, c, d, e 五个字母，打印第 1 页和第 5 页的字母。
 
 **实现**
-```
+``` python
 little_dict = {
     1: 'a',
     2: 'b',
@@ -51,7 +51,7 @@ print little_dict[5]
 上面例子中 1, 2, 3, 4, 5 表示字典的键(key)， a, b, c, d, e 表示字典的值(value)
 
 dict 功能演示
-```
+``` python
 # 定义空 dict
 foo_dict = {}
 
@@ -116,7 +116,7 @@ for key, value in foo_dict.items():
 ### 集合(set)
 我们在高中已经学习过集合的相关概念，这里最重要的理解集合里面的元素是唯一的就够了，集合的交集，并集，差集等等方法 Python 都有相应的实现，下面我们来演示一下如何使用集合。
 
-```
+``` python
 # 定义集合
 foo_set = set([1, 2, 5])
 bar_set = set([2, 4, 5])
@@ -158,7 +158,7 @@ bar_set = set([2, 4, 5])
 ![4,5](http://o73q6k64s.bkt.clouddn.com/img_0024.jpg)
 
 代码实现:
-```
+``` python
 # 定义栈
 ret_stack = []
 
@@ -193,7 +193,7 @@ print ret_stack[0]
 format 函数的作用：字符串格式化的方法，表现力更强更直观，用他来表示 `1+2` 很适合。
 
 eval 函数的作用：eval 可以用来计算字符串表达式
-```
+``` python
 eval('1 + 2')
 eval('3 * 5')
 ```

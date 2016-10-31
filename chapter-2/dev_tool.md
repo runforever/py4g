@@ -89,7 +89,7 @@ IPython 还有很多神奇的功能，我这里只说了最基本的，感兴趣
 Python 的代码文件以 `.py` 结尾。
 
 将下面的代码保存在一个叫 hello.py
-```
+``` python
 # coding: utf-8
 
 # 我是一个文件

@@ -12,7 +12,7 @@
 python 中使用 `def` 来作为定义函数的关键字，`return` 关键词返回函数的求值结果。
 
 **问题**: 给定任意长方形的长宽，求面积。
-```
+``` python
 def rectangle_area(length, width):
     area = length * width
     return area
@@ -38,7 +38,7 @@ function 就像我们数学中学过的公示一样，给定输入，带入公�
 
 #### 脚本文件
 现在我们将这个代码保存到脚本文件 `rectangle_area.py` 中。
-```
+``` python
 # coding: utf-8
 
 def rectangle_area(length, width):
@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
 #### function 注释
 function 的注释用来告诉阅读代码的人函数的作用
-```
+``` python
 def rectangle_area(length, width):
     '''
     计算长方形的面积
@@ -83,7 +83,7 @@ function 中的参数可以指定一个默认值。
 
 **问题**：给定一个数的值和倍数，求结果，如果没有给定倍数默认是 2 倍，例如给定 3 和 倍数 5。
 
-```
+``` python
 def get_multiple(value, multiple=2):
     return value * multiple
 
@@ -100,13 +100,13 @@ print get_multiple(3)
 注意:
 
 参数默认值必须定义在函数参数的最后，这样定义默认参数值 Python 解释器会报错。
-```
+``` python
 def get_multiple(multiple=2, value):
     return value * multiple
 ```
 
 如果有多个默认参数值，调用的时候最好显示的加上默认参数名。
-```
+``` python
 # 实际情况一定不要用这样的命名，这里只是演示用
 def foo(a, b=1, c=2, d=3):
     return a * b * c * d
@@ -129,7 +129,7 @@ Ennly say hello to hanmei
 ```
 
 实现：
-```
+``` python
 def say_hello(dog, *args):
     for client in args:
         print '{dog} say hello to {client}'.format(dog=dog, client=client)
@@ -155,7 +155,7 @@ mike say こんにちは to Dachshund
 ```
 
 实现：
-```
+``` python
 def say_hello(dog, **kwargs):
     for name, greeting in kwargs.items():
         print '{name} say {greeting} to {dog}'.format(name=name, greeting=greeting, dog=dog)
@@ -167,7 +167,7 @@ say_hello('Dachshund', jack='你好', rose='hi', mike='こんにちは')
 `kwargs` 其实是我们之前学过的 dict 数据类型，这里我们用了 items 方法来获取所有的客人。
 
 `args` 和 `kwargs` 可以同时使用。
-```
+``` python
 def foo(bar, *args, **kwargs):
     pass
 
@@ -177,7 +177,7 @@ def foo(bar, *args, **kwargs):
 注意定义可变参数的顺序，可变参数放在函数参数的最后面。`kwargs` 要放在 `args` 的后面。
 
 例如：
-```
+``` python
 def foo(bar, a=1, *args, **kwargs):
     print bar
     print a

@@ -14,7 +14,7 @@
 我们将之前写过的后缀表达式的功能组织成一个项目，项目名叫 Calculator，里面包含两个模块，一个 main 模块，负责接收输入的后缀表达式并且输出结果，一个是 caculation 模块，负责后缀表达式的计算。
 
 项目结构
-```
+``` bash
 Caculator
 ├── caculation.py
 └── main.py
@@ -23,7 +23,7 @@ Caculator
 ```
 
 caculation.py 模块实现
-```
+``` python
 # coding: utf-8
 
 '''
@@ -58,7 +58,7 @@ def caculation(expression):
 ```
 
 main.py 模块实现
-```
+``` python
 # coding: utf-8
 
 from caculation import caculation
@@ -98,7 +98,7 @@ if __name__ == '__main__':
 
 #### 导入模块的其他方法
 除了使用 `from ... import ...` 的格式，我们还可以使用如下格式导入模块。
-```
+``` python
 # 导入 caculation.py 模块
 import caculation
 
@@ -107,7 +107,7 @@ caculation.caculation(expr)
 ```
 
 如果我们导入的模块或者函数与别人开发的同名了怎么办，这个时候可以使用 `as` 关键字来去别名
-```
+``` python
 # A 模块和 B 模块都有 caculation 函数
 from A import caculation as a_cacu
 from B import caculation as b_cacu
@@ -145,7 +145,7 @@ B.cacu()
 Package 项目中有 Foo 这个包，Foo 中有 A, B 模块，A, B 模块中有 a1, b1 函数，我们来演示如何引入。
 
 目录结构
-```
+``` bash
 Package
 ├── Foo
 │   ├── A.py
@@ -157,7 +157,7 @@ Package
 ```
 
 mian.py 模块代码
-```
+``` python
 # coding: utf-8
 
 from Foo.A import a1

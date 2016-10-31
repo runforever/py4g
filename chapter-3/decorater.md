@@ -18,7 +18,7 @@
 ![time.clock()](http://cdn.defcoding.com/5C64BCF3-6EA0-4339-8C35-578E829DB195.png)
 
 **需要记录时间的函数**
-```
+``` python
 # coding: utf-8
 
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
 ```
 
 **不优雅方案一，在函数内部添加计时函数代码**
-```
+``` python
 # coding: utf-8
 
 import time
@@ -53,7 +53,7 @@ if __name__ == '__main__':
 这个方案适应性太差，每个需要计时的函数都要添计时相关的代码，**不符合一个函数只做一件事的规则**。
 
 **不优雅方案二，调用函数时添加计时代码**
-```
+``` python
 # coding: utf-8
 
 import time
@@ -80,7 +80,7 @@ if __name__ == '__main__':
 在 Python 中，对象是一等公民（first class），意味着对象可以被当成变量，函数参数，或者函数的返回结果，而 Python 中的一切都是对象，function 自然也是一个对象。
 
 #### 一个不错的解决方案
-```
+``` python
 # coding: utf-8
 
 import time
@@ -108,7 +108,7 @@ if __name__ == '__main__':
 #### 终极解决方案
 到现在我们已经完全明白我们面对的问题了，我们需要保证函数调用不变的情况下给函数加上计时代码。
 
-```
+``` python
 # coding: utf-8
 
 import time
@@ -146,7 +146,7 @@ if __name__ == '__main__':
 > 语法糖法对语言的功能并没有影响，但是更方便程序员使用。语法糖让程序更加简洁，有更高的可读性。 -- 维基百科
 
 语法糖不会影响程序功能，只是让代码更好看而已。
-```
+``` python
 # coding: utf-8
 
 import time
@@ -179,7 +179,7 @@ if __name__ == '__main__':
 ### 更多装饰器
 
 #### 带参数函数的装饰器
-```
+``` python
 # coding: utf-8
 
 import time
@@ -211,7 +211,7 @@ if __name__ == '__main__':
 
 #### 带参数的装饰器
 
-```
+``` python
 # coding: utf-8
 
 import time

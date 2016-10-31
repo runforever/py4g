@@ -23,7 +23,7 @@ OOP 是种具有对象概念的程序编程范型，同时也是一种程序开�
 Python 中使用 `class` 关键字来定义类，类中包含对象的属性和方法。
 
 **使用类定义一个妹子**
-```
+``` python
 class Girl(object):
     '''
     会编程的妹子
@@ -48,7 +48,7 @@ Python 中新式类的定义都要继承 `object`，`class Gril(object)` 是定�
 我们使用类定义好了对象的方法和属性之后就可以用类来生成对象了。
 
 **来一打会写代码的妹子**
-```
+``` python
 # 生成对象
 cute_girl = Girl('wheat', 'cute', 'Python')
 cool_girl = Girl('white', 'cool', 'Swift')
@@ -78,7 +78,7 @@ OOP 具有继承（Inherit）多态（Polymorphism）和封装（Encapsulation�
 1. 属性有血量、移动速度。
 2. 方法有攻击，使用特殊技能。
 
-```
+``` python
 class BaseZombie(object):
     '''
     基础僵尸类
@@ -121,7 +121,7 @@ class BossZombie(BaseZombie):
 
 #### 多态
 上面我们通过继承将僵尸类已经定义好了，下面我们就要用这些僵尸来发动总进攻了。
-```
+``` python
 zombies = (NormalZombie(10, 10), BossZombie(100, 10), NormalZombie(10, 10), BossZombie(100, 10))
 for zombie in zombies:
     zombie.attack()
@@ -132,13 +132,13 @@ for zombie in zombies:
 
 #### 封装
 **通过实例访问对象的属性**
-```
+``` python
 zombie = NormalZombie(10, 10)
 print zombie.health
 ```
 
 而封装则是将类的属性放到方法中
-```
+``` python
 class NormalZombie(BaseZombie):
 
     def get_health(self):
@@ -163,7 +163,7 @@ Python 对访问控制的要求不是很敏感，所以我也不打算多说这�
 OOP 的设计原则还有很多，而我对这两条的印象最深刻也用的最多，新手使用 OOP 很容易犯的错误就是只用继承来达到代码复用的目的，组合也可以达到相同的目的，使用组合能低类之间的耦合度（依赖），同时能避免上帝类（一个类做了所有的事情）的出现。
 
 **僵尸加入使用道具功能**
-```
+``` python
 # 我们可以在基类上添加方法
 class BaseZombie(object):
 
@@ -178,7 +178,6 @@ class BaseZombie(object):
         使用道具
         '''
         print 'use props
-
 
 # 组合方法
 # 定义道具类
@@ -195,7 +194,6 @@ class Props(object):
         使用道具
         '''
         print 'use props
-
 
 class BaseZombie(object):
 
