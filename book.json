@@ -1,9 +1,12 @@
 {
   "title": "如何教妹子学Python",
-  "plugins": ["github", "fancybox", "pyshell"],
+  "plugins": ["github", "fancybox", "katex", "pyshell"],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/runforever/py4g/issues"
+    },
+    "pyshell": {
+      "apiHost": "http://pyshell.defcoding.com"
     }
   },
   "language": "zh-hans"
