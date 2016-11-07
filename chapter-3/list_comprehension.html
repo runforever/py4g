@@ -1,0 +1,701 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>切片与列表解析 · 如何教妹子学Python</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pyshell/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href=".." />
+    
+    
+    <link rel="prev" href="decorater.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">序</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introductory/why.html">
+            
+                <a href="../introductory/why.html">
+            
+                    
+                    为什么要写这本书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../introductory/about.html">
+            
+                <a href="../introductory/about.html">
+            
+                    
+                    关于我
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../introductory/warning.html">
+            
+                <a href="../introductory/warning.html">
+            
+                    
+                    重要说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapter-1/attitude.html">
+            
+                <a href="../chapter-1/attitude.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapter-1/charm.html">
+            
+                <a href="../chapter-1/charm.html">
+            
+                    
+                    Python 语言的魅力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapter-1/Python2or3.html">
+            
+                <a href="../chapter-1/Python2or3.html">
+            
+                    
+                    Python2 or Python3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapter-2/basic_type.html">
+            
+                <a href="../chapter-2/basic_type.html">
+            
+                    
+                    基本数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapter-2/variables.html">
+            
+                <a href="../chapter-2/variables.html">
+            
+                    
+                    列表、变量、流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapter-2/tuple_dict.html">
+            
+                <a href="../chapter-2/tuple_dict.html">
+            
+                    
+                    元组、字典、集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter-2/dev_tool.html">
+            
+                <a href="../chapter-2/dev_tool.html">
+            
+                    
+                    聊聊开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../chapter-2/function.html">
+            
+                <a href="../chapter-2/function.html">
+            
+                    
+                    函数、脚本文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../chapter-2/module.html">
+            
+                <a href="../chapter-2/module.html">
+            
+                    
+                    模块、包、设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../chapter-2/debug.html">
+            
+                <a href="../chapter-2/debug.html">
+            
+                    
+                    Bug 和 Debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../chapter-2/oop.html">
+            
+                <a href="../chapter-2/oop.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    Pythonic
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="decorater.html">
+            
+                <a href="decorater.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.2" data-path="list_comprehension.html">
+            
+                <a href="list_comprehension.html">
+            
+                    
+                    切片与列表解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="..">
+            
+                <span>
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="..">
+            
+                <span>
+            
+                    
+                    Mixin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    提高编程效率
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="..">
+            
+                <span>
+            
+                    
+                    什么是重复造轮子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >切片与列表解析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5207;&#x7247;&#x4E0E;&#x5217;&#x8868;&#x89E3;&#x6790;">&#x5207;&#x7247;&#x4E0E;&#x5217;&#x8868;&#x89E3;&#x6790;</h1><blockquote><p>&#x4F18;&#x7F8E;&#x80DC;&#x4E8E;&#x4E11;&#x964B;&#xFF0C;&#x663E;&#x660E;&#x80DC;&#x4E8E;&#x9690;&#x542B; -- import this</p></blockquote><p>&#x8FD9;&#x4E00;&#x8282;&#x4E3B;&#x8981;&#x662F;&#x8BF4;&#x8BF4;<strong>&#x5217;&#x8868;&#x5207;&#x7247;</strong>&#x548C;<strong>&#x5217;&#x8868;&#x89E3;&#x6790;</strong>&#xFF0C;&#x7528;&#x597D;&#x8FD9;&#x4E24;&#x4E2A;&#x7279;&#x6027;&#x4F1A;&#x8BA9;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7684;&#x7B80;&#x5355;&#x6613;&#x8BFB;&#x3002;</p><h3 id="range-&#x548C;-xrange-&#x51FD;&#x6570;">range &#x548C; xrange &#x51FD;&#x6570;</h3><h4 id="range">range</h4><p><code>range</code> &#x7684;&#x5B98;&#x65B9; API &#x6587;&#x6863;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p><p>     <a href="http://cdn.defcoding.com/7FCD904F-5CCE-4C26-BE78-F7891E4CFFD7.png" title="range" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/7FCD904F-5CCE-4C26-BE78-F7891E4CFFD7.png" alt="range">
+     </a></p><p>&#x6211;&#x4EEC;&#x8981;&#x5B66;&#x4F1A;&#x901A;&#x8FC7;&#x5B98;&#x65B9;&#x7684; API &#x6587;&#x6863;&#x6765;&#x770B;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x548C;&#x7528;&#x6CD5;&#xFF0C;&#x5728;&#x7F16;&#x7A0B;&#x8FC7;&#x7A0B;&#x4E2D;&#x7ECF;&#x5E38;&#x4F1A;&#x9047;&#x5230;&#x6CA1;&#x6709;&#x89C1;&#x8FC7;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x901A;&#x8FC7;&#x5B98;&#x65B9; API &#x53EF;&#x4EE5;&#x6700;&#x5FEB;&#x4E86;&#x89E3;&#x5230;&#x51FD;&#x6570;&#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x535A;&#x5BA2;&#x548C;&#x5176;&#x4ED6;&#x6E20;&#x9053;&#x7684;&#x6587;&#x6863;&#x6709;&#x53EF;&#x80FD;&#x6EDE;&#x540E;&#xFF0C;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x662F;&#x6700;&#x51C6;&#x786E;&#x7684;&#x3002;</p><p>&#x901A;&#x8FC7;&#x6587;&#x6863;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053; <code>range</code> &#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;:</p><pre><code class="lang-python">range(stop) <span class="hljs-comment"># e.g. range(5) = [0, 1, 2, 3, 4]</span>
+range(start, stop[, step]) <span class="hljs-comment"># step &#x4E3A;&#x6B65;&#x957F;&#x662F;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;e.g. range(1, 6, 2) = [1, 3, 5]</span></code></pre>
+<h4 id="xrange">xrange</h4><p><code>xrange</code> &#x7684;&#x5B9A;&#x4E49;&#x548C;&#x4F7F;&#x7528;&#x548C; <code>range</code> &#x4E00;&#x6837;&#xFF0C;&#x533A;&#x522B;&#x662F; <code>xrange</code> &#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5668;&#xFF0C;<code>range</code> &#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A; <code>list</code>&#xFF0C;&#x751F;&#x6210;&#x5668;&#x8981;&#x6BD4; <code>list</code> &#x7701;&#x5185;&#x5B58;&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x662F;&#x4F7F;&#x7528; <code>xrange</code>&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x786E;&#x5B9E;&#x9700;&#x8981;&#x4E00;&#x4E2A; <code>list</code>&#xFF0C;&#x90A3;&#x5C31;&#x4F7F;&#x7528; <code>range</code>&#x3002;</p><p>&#x5173;&#x4E8E;&#x751F;&#x6210;&#x5668;&#x540E;&#x7EED;&#x4F1A;&#x8BE6;&#x7EC6;&#x8BB2;&#x89E3;&#xFF0C;&#x8FD9;&#x91CC;&#x8BFB;&#x8005;&#x8981;&#x77E5;&#x9053;&#x4ED6;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x7701;&#x5185;&#x5B58;&#x3002;</p><p>&#x8FD9;&#x91CC;&#x8BF4; <code>range</code> &#x548C; <code>xrange</code> &#x7684;&#x5B9A;&#x4E49;&#x548C;&#x4F7F;&#x7528;&#xFF0C;&#x4E00;&#x65B9;&#x9762;&#x662F;&#x4E3A;&#x4E86;&#x544A;&#x8BC9;&#x8BFB;&#x8005;&#x67E5;&#x770B; API &#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#x662F;&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x7406;&#x89E3;&#x5217;&#x8868;&#x5207;&#x7247;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x90FD;&#x5C5E;&#x4E8E; <code>start, stop[, step]</code> &#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x3002;</p><h3 id="&#x5217;&#x8868;&#x5207;&#x7247;&#xFF08;slice&#xFF09;">&#x5217;&#x8868;&#x5207;&#x7247;&#xFF08;Slice&#xFF09;</h3><h4 id="&#x57FA;&#x7840;">&#x57FA;&#x7840;</h4><p>&#x5BF9;&#x4E8E; <code>list</code>&#xFF0C;&#x6211;&#x4EEC;&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x6709;&#x6839;&#x636E;&#x4E0B;&#x6807;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x9700;&#x6C42;&#x5916;&#xFF08;&#x5982;&#xFF1A;<code>l[3]</code> &#x4E3A;&#x83B7;&#x53D6; <code>l</code> &#x7684;&#x7B2C; 4 &#x4E2A;&#x5143;&#x7D20;&#xFF09;&#xFF0C;&#x8FD8;&#x53EF;&#x80FD;&#x6709;&#x4E00;&#x4E0B;&#x7684;&#x9700;&#x6C42;&#x573A;&#x666F;&#xFF1A;</p><ol><li>&#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x4E0B;&#x6807;&#x4E4B;&#x540E;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;
+</li>
+<li>&#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x4E0B;&#x6807;&#x4E4B;&#x524D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;
+</li>
+<li>&#x83B7;&#x53D6;&#x5F00;&#x59CB;&#x4E0B;&#x6807;&#x5230;&#x7ED3;&#x675F;&#x4E0B;&#x6807;&#x4E2D;&#x95F4;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;
+</li>
+<li>&#x83B7;&#x53D6;&#x5F00;&#x59CB;&#x4E0B;&#x6807;&#x5230;&#x7ED3;&#x675F;&#x4E0B;&#x6807;&#x4E2D;&#x95F4;&#x6307;&#x5B9A;&#x6B65;&#x957F;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;
+</li></ol>
+<p>&#x4EE5;&#x4E0A;&#x7684;&#x9700;&#x6C42;&#x573A;&#x666F;&#x5C31;&#x8981;&#x7528;&#x5230;&#x5217;&#x8868;&#x5207;&#x7247;&#x6765;&#x89E3;&#x51B3;&#x4E86;&#xFF0C;&#x5207;&#x7247;&#x7684;&#x8BED;&#x6CD5;&#x4E3A; <code>[::]</code></p><pre><code class="lang-python"><span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4E00;&#x4E2A; list</span>
+foo = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>]
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x7B2C; 3 &#x4E2A;&#x5143;&#x7D20;&#x540E;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x5305;&#x542B;&#x7B2C; 3 &#x4E2A;&#x5143;&#x7D20;&#xFF0C;foo[3] = 4</span>
+foo[<span class="hljs-number">3</span>:]
+<span class="hljs-comment"># [4, 5, 6, 7, 8]</span>
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x7B2C; 5 &#x4E2A;&#x5143;&#x7D20;&#x4E4B;&#x524D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x5305;&#x542B;&#x7B2C; 5 &#x4E2A;&#x5143;&#x7D20;&#xFF0C;foo[4] = 5</span>
+foo[:<span class="hljs-number">5</span>]
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x7B2C; 3 &#x5230;&#x7B2C; 5 &#x4E2A;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;</span>
+foo[<span class="hljs-number">3</span>:<span class="hljs-number">5</span>]
+[<span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x7B2C; 2 &#x5230;&#x7B2C; 7 &#x4E2A;&#x6307;&#x5B9A;&#x6B65;&#x957F;&#x4E3A; 2 &#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;</span>
+foo[<span class="hljs-number">2</span>:<span class="hljs-number">7</span>:<span class="hljs-number">2</span>]
+[<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>]</code></pre>
+<p>&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684; <code>list</code>&#xFF0C;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x539F;&#x6765; <code>list</code> &#x7684;&#x5185;&#x5BB9;&#x3002;</p><p>&#x4E0A;&#x8FF0;&#x7684;&#x4F8B;&#x5B50;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x7684; <code>start, stop[, step]</code> &#x6A21;&#x5F0F;&#x8868;&#x73B0;&#x5F62;&#x5F0F;&#x4E3A; <code>[start:stop:step]</code>&#x3002;</p><h4 id="list-&#x7684;&#x53CD;&#x5411;&#x4E0B;&#x6807;">list &#x7684;&#x53CD;&#x5411;&#x4E0B;&#x6807;</h4><p>     <a href="http://cdn.defcoding.com/935D591E-8E27-4CB3-9C45-7C5849FD5BD3.png" title="reverse" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/935D591E-8E27-4CB3-9C45-7C5849FD5BD3.png" alt="reverse">
+     </a></p><p>&#x53CD;&#x5411;&#x4E0B;&#x6807;&#x4ECE; <code>-1</code> &#x5F00;&#x59CB;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528; <code>l[-1]</code> &#x8BBF;&#x95EE;&#x5230;&#x5217;&#x8868;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x53CD;&#x5411;&#x4E0B;&#x6807;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x505A;&#x5217;&#x8868;&#x5207;&#x7247;&#x3002;</p><h4 id="&#x5217;&#x8868;&#x5207;&#x7247;&#x5C0F;&#x6280;&#x5DE7;">&#x5217;&#x8868;&#x5207;&#x7247;&#x5C0F;&#x6280;&#x5DE7;</h4><p>&#x590D;&#x5236;&#x4E00;&#x4E2A; <code>list</code></p><pre><code>foo = [1, 2, 3]
+bar = foo[::]
+print bar
+# bar &#x7684;&#x7ED3;&#x679C;&#x4E3A; [1, 2, 3]</code></pre>
+<p>&#x53CD;&#x8F6C;&#x5217;&#x8868;&#x987A;&#x5E8F;</p><pre><code>foo = [1, 2, 3]
+bar = foo[::-1]
+print bar
+# bar &#x7684;&#x7ED3;&#x679C;&#x4E3A; [3, 2, 1]</code></pre>
+<h3 id="&#x5217;&#x8868;&#x89E3;&#x6790;&#xFF08;list-comprehension&#xFF09;">&#x5217;&#x8868;&#x89E3;&#x6790;&#xFF08;list comprehension&#xFF09;</h3><h4 id="&#x57FA;&#x7840;">&#x57FA;&#x7840;</h4><p>&#x5217;&#x8868;&#x89E3;&#x6790;&#x662F; Python &#x4E2D;&#x5F88; cool &#x7684;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#xFF0C;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x7528;&#x5B83;&#x53EF;&#x4EE5;&#x628A;&#x591A;&#x884C;&#x4EE3;&#x7801;&#x53D8;&#x6210;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x8BFB;&#x6027;&#x66F4;&#x597D;&#x3002;</p><p><strong>&#x95EE;&#x9898;</strong>&#xFF1A;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A; <code>list</code>&#xFF0C;&#x8981;&#x6C42;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684; <code>list</code>&#xFF0C;&#x65B0; <code>list</code> &#x91CC;&#x7684;&#x5143;&#x7D20;&#x662F;&#x539F;&#x6765;&#x7684; 2 &#x6B21;&#x65B9;&#x3002;</p><p>&#x4F8B;&#x5982;&#xFF1A;<code>[1, 2, 3, 4, 5]</code></p><p>&#x7ED3;&#x679C;&#xFF1A;<code>[1, 2, 9, 16, 25]</code></p><p><strong>&#x8001;&#x529E;&#x6CD5;&#xFF0C;<code>for</code> &#x5FAA;&#x73AF;</strong></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">square_list</span><span class="hljs-params">(old_list)</span>:</span>
+    new_list = []
+    <span class="hljs-keyword">for</span> elem <span class="hljs-keyword">in</span> old_list:
+        new_elem = elem ** <span class="hljs-number">2</span>
+        new_list.append(new_elem)
+    <span class="hljs-keyword">return</span> new_list
+
+old_list = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<span class="hljs-keyword">print</span> square_list(old_list)</code></pre>
+<p><strong>&#x5217;&#x8868;&#x89E3;&#x6790;&#x65B9;&#x6848;</strong></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">square_list</span><span class="hljs-params">(old_list)</span>:</span>
+    new_elem = [elem ** <span class="hljs-number">2</span> <span class="hljs-keyword">for</span> elem <span class="hljs-keyword">in</span> old_list]
+    <span class="hljs-keyword">return</span> new_elem
+
+old_list = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<span class="hljs-keyword">print</span> square_list(old_list)</code></pre>
+<p>&#x5217;&#x8868;&#x89E3;&#x6790;&#x628A; <code>for</code> &#x5FAA;&#x73AF;&#x53D8;&#x6210;&#x4E86;&#x4E00;&#x884C;&#x4EE3;&#x7801; <code>[elem ** 2 for elem in old_list]</code>&#x3002;</p><p>&#x4ECE;&#x8BED;&#x6CD5;&#x4E0A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5217;&#x8868;&#x89E3;&#x6790;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p><p>     <a href="http://cdn.defcoding.com/88FFAF75-3C43-42C9-B4E9-2B38A81B8DA1.png" title="list comprehension" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/88FFAF75-3C43-42C9-B4E9-2B38A81B8DA1.png" alt="list comprehension">
+     </a></p><p>&#x4ECE;&#x62BD;&#x8C61;&#x5C42;&#x9762;&#x6765;&#x770B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x5217;&#x8868;&#x89E3;&#x6790;&#x770B;&#x6210;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#xFF1A;</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>=</mo><mo>{</mo><msup><mi>x</mi><mn>2</mn></msup><mo>&#x2223;</mo><mi>x</mi><mo>&#x2208;</mo><mrow><mi mathvariant="double-struck">N</mi></mrow><mo>}</mo></mrow><annotation encoding="application/x-tex">
+S=\{x^2 \mid x \in \mathbb{N}\}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8641079999999999em;"></span><span class="strut bottom" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mrel">=</span><span class="mopen">{</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mrel">&#x2223;</span><span class="mord mathit">x</span><span class="mrel">&#x2208;</span><span class="mord displaystyle textstyle uncramped"><span class="mord mathbb">N</span></span><span class="mclose">}</span></span></span></span></span></p><p><strong>&#x5217;&#x8868;&#x89E3;&#x6790;&#x7684;&#x8D77;&#x6E90;&#x4E5F;&#x662F;&#x62BD;&#x8C61;&#x7684;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#xFF0C;&#x5927;&#x5BB6;&#x5BF9;&#x6BD4;&#x4E00;&#x4E0B;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x548C;&#x5217;&#x8868;&#x89E3;&#x6790;&#x7684;&#x8BED;&#x6CD5;&#x4FBF;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;</strong></p><h4 id="&#x5E26;-if-&#x5224;&#x65AD;&#x7684;&#x5217;&#x8868;&#x89E3;&#x6790;">&#x5E26; if &#x5224;&#x65AD;&#x7684;&#x5217;&#x8868;&#x89E3;&#x6790;</h4><p><strong>&#x95EE;&#x9898;</strong>&#xFF1A;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A; <code>list</code>&#xFF0C;&#x83B7;&#x53D6; <code>list</code> &#x91CC;&#x6240;&#x6709;&#x7684;&#x5076;&#x6570;&#x5143;&#x7D20;&#x3002;</p><p>&#x4F8B;&#x5982;&#xFF1A;<code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code></p><p>&#x7ED3;&#x679C;&#xFF1A;<code>[2, 4, 6, 8]</code></p><p><code>for</code> &#x65B9;&#x6848;</p><pre><code class="lang-python">foo = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]
+bar = []
+
+<span class="hljs-keyword">for</span> elem <span class="hljs-keyword">in</span> foo:
+    <span class="hljs-keyword">if</span> elem % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>:
+        bar.append(elem)
+<span class="hljs-keyword">print</span> bar</code></pre>
+<p>&#x5217;&#x8868;&#x89E3;&#x6790;&#x65B9;&#x6848;</p><pre><code class="lang-python">foo = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]
+bar = [elem <span class="hljs-keyword">for</span> elem <span class="hljs-keyword">in</span> foo <span class="hljs-keyword">if</span> elem % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>]
+<span class="hljs-keyword">print</span> bar</code></pre>
+<p>&#x8BED;&#x6CD5;&#x89E3;&#x6790;</p><p>     <a href="http://cdn.defcoding.com/A7169D0E-775E-40A9-84C6-F070E599C5D8.png" title="if list comprehension" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/A7169D0E-775E-40A9-84C6-F070E599C5D8.png" alt="if list comprehension">
+     </a></p><h4 id="&#x53CC;&#x5C42;-for-&#x5FAA;&#x73AF;&#x7684;&#x5217;&#x8868;&#x89E3;&#x6790;">&#x53CC;&#x5C42; for &#x5FAA;&#x73AF;&#x7684;&#x5217;&#x8868;&#x89E3;&#x6790;</h4><p><strong>&#x95EE;&#x9898;</strong>&#xFF1A;&#x7ED9;&#x5B9A;&#x4E24;&#x4E2A; <code>list</code>&#xFF0C;&#x83B7;&#x53D6;&#x4ED6;&#x4EEC;&#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x7EC4;&#x5408;&#x3002;</p><p>&#x4F8B;&#x5982;&#xFF1A;<code>[1, 3, 5]</code> &#x548C; <code>[2, 4, 6]</code></p><p>&#x7ED3;&#x679C;&#xFF1A;<code>[(1, 2), (1, 4), (1, 6), (3, 2), (3, 4), (3, 6), (5, 2), (5, 4), (5, 6)]</code></p><p><code>for</code> &#x65B9;&#x6848;</p><pre><code class="lang-python">foo = [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>]
+bar = [<span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>]
+new_list = []
+
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> foo:
+    <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> bar:
+        new_list.append((x, y))
+<span class="hljs-keyword">print</span> new_list</code></pre>
+<p>&#x5217;&#x8868;&#x89E3;&#x6790;&#x65B9;&#x6848;</p><pre><code class="lang-python">foo = [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>]
+bar = [<span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>]
+new_list = [(x, y) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> foo <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> bar]
+<span class="hljs-keyword">print</span> new_list</code></pre>
+<p><strong>&#x4F5C;&#x4E1A;</strong>&#xFF1A;&#x753B;&#x51FA;&#x5217;&#x8868;&#x89E3;&#x6790;&#x7684;&#x8BED;&#x6CD5;&#x6B65;&#x9AA4;</p><h4 id="&#x5D4C;&#x5957;&#x7684;&#x5217;&#x8868;&#x89E3;&#x6790;">&#x5D4C;&#x5957;&#x7684;&#x5217;&#x8868;&#x89E3;&#x6790;</h4><p><strong>&#x95EE;&#x9898;</strong>&#xFF1A;&#x6253;&#x5370; 9 x 9 &#x7684;&#x4E58;&#x6CD5;&#x8868;&#x3002;</p><p><code>for</code> &#x65B9;&#x6848;</p><pre><code class="lang-python">multiply_list = []
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> xrange(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>):
+    temp_list = []
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> xrange(<span class="hljs-number">1</span>, i+<span class="hljs-number">1</span>):
+        multiply_string = <span class="hljs-string">&apos;{0}x{1}={2}&apos;</span>.format(j, i, i*j)
+        temp_list.append(multiply_string)
+    temp_string = <span class="hljs-string">&apos;,&apos;</span>.join(temp_list)
+    multiply_list.append(temp_string)
+
+<span class="hljs-keyword">print</span> <span class="hljs-string">&apos;\n&apos;</span>.join(multiply_list)</code></pre>
+<p>&#x5217;&#x8868;&#x89E3;&#x6790;&#x65B9;&#x6848;</p><pre><code class="lang-python">multiply_list = [<span class="hljs-string">&apos;,&apos;</span>.join([<span class="hljs-string">&apos;{0}x{1}={2}&apos;</span>.format(j, i, i*j) <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> xrange(<span class="hljs-number">1</span>, i+<span class="hljs-number">1</span>)]) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> xrange(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)]
+<span class="hljs-keyword">print</span> <span class="hljs-string">&apos;\n&apos;</span>.join(multiply_list)</code></pre>
+<p>&#x8BED;&#x6CD5;&#x89E3;&#x6790;</p><p><strong>&#x4F5C;&#x4E1A;</strong>&#xFF1A;&#x753B;&#x51FA;&#x5217;&#x8868;&#x89E3;&#x6790;&#x7684;&#x8BED;&#x6CD5;&#x6B65;&#x9AA4;</p><h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3><p><code>Pythonic</code> &#x6307;&#x7684;&#x662F;&#x7528; Python &#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#xFF0C;&#x5C31;&#x50CF;&#x662F;&#x4F7F;&#x7528; <code>for</code> &#x548C;&#x5217;&#x8868;&#x89E3;&#x6790;&#x4E24;&#x79CD;&#x65B9;&#x6848;&#xFF0C;&#x540E;&#x8005;&#x663E;&#x7136;&#x662F;&#x66F4;&#x7B26;&#x5408; Python &#x7684;&#x60EF;&#x7528;&#x6CD5;&#x7684;&#xFF0C;&#x524D;&#x8005;&#x80FD;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x4F46;&#x662F;&#x4F1A;&#x8BA9;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x5197;&#x957F;&#xFF0C;&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x662F;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x54C1;&#x5473;&#xFF0C;&#x800C;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x597D;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7559;&#x4E2A;&#x8BFB;&#x8005;&#x53BB;&#x601D;&#x8003;&#x4E86;&#x3002;</p><p><code>Pythonic</code> &#x5C5E;&#x4E8E; Python&#xFF0C;&#x6BCF;&#x79CD;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x548C;&#x5DE5;&#x5177;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x601D;&#x60F3;&#x548C;&#x60EF;&#x7528;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x65B0;&#x8BED;&#x8A00;&#x548C;&#x65B0;&#x5DE5;&#x5177;&#x7684;&#x65F6;&#x5019;&#x8981;&#x5B66;&#x4F1A;&#x7528;&#x65B0;&#x8BED;&#x8A00;&#x548C;&#x65B0;&#x5DE5;&#x5177;&#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#xFF0C;&#x4E00;&#x5473;&#x7684;&#x7528;&#x6211;&#x4EEC;&#x7684;&#x7ECF;&#x9A8C;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x6709;&#x65F6;&#x5019;&#x4F1A;&#x8BA9;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x53D8;&#x5F97;&#x8E69;&#x811A;&#x3002;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="decorater.html" class="navigation navigation-prev " aria-label="Previous page: 装饰器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="..#" class="navigation navigation-next " aria-label="Next page: 函数式编程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"切片与列表解析","level":"2.3.2","depth":2,"next":{"title":"函数式编程","level":"2.3.3","depth":2,"anchor":"#","path":".","ref":"#","articles":[]},"previous":{"title":"装饰器","level":"2.3.1","depth":2,"path":"chapter-3/decorater.md","ref":"chapter-3/decorater.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","fancybox","katex","pyshell"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/runforever/py4g/issues"},"pyshell":{"apiHost":"http://pyshell.defcoding.com"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"如何教妹子学Python","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter-3/list_comprehension.md","mtime":"2016-11-07T10:26:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-07T13:05:48.848Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pyshell/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

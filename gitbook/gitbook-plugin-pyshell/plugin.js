@@ -1,9 +1,5 @@
 require(['gitbook', 'jQuery'], function (gitbook, $) {
 
-    var apiHost = 'http://pyshell.daoapp.io',
-        runShellApi = apiHost + '/run/shell',
-        runSourceApi = apiHost + '/run/source';
-
     function insertPyShell() {
         var toggleBtnHtml = [
             '<p id="py-shell-toggle-btn"><span>$ python</span><span id="py-shell-btn-cursor">&nbsp;&nbsp;</span></p>'
@@ -36,7 +32,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
 
             '</div>'
         ]
-        $('.page-inner section.normal:last').after(toggleBtnHtml.join(''));
+        $('.book.with-summary').after(toggleBtnHtml.join(''));
         $('.book.with-summary').after(pyShellHtml.join(''));
     }
 
@@ -48,50 +44,59 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
         $('.py-shell-editor-molokai').val('');
     }
 
-    $('body').on('click', '#py-shell-toggle-btn', function() {
-        $('#py-shell-modal').toggle();
-        initIpython();
-        initPythonEditor();
-    }).on('keydown', '#py-shell-ipython', function(event) {
-        var keyCode = event.keyCode ? event.keyCode : event.keyCode;
-        if (keyCode === 13) {
-            var $textarea = $(this);
-            var sourceCode = $textarea.val();
-            var sourceCodeArray = sourceCode.split('\n');
-            var lastLineCode = sourceCodeArray.pop().slice(4);
+    gitbook.events.bind('start', function(event, config) {
+        insertPyShell();
+
+        var apiHost = config.pyshell.apiHost,
+            runShellApi = apiHost + '/run/shell',
+            runSourceApi = apiHost + '/run/source';
+
+        $('body').on('click', '#py-shell-toggle-btn', function() {
+            $('#py-shell-modal').toggle();
+            initIpython();
+            initPythonEditor();
+        }).on('keydown', '#py-shell-ipython', function(event) {
+            var keyCode = event.keyCode ? event.keyCode : event.keyCode;
+            if (keyCode === 13) {
+                var $textarea = $(this);
+                var sourceCode = $textarea.val();
+                var sourceCodeArray = sourceCode.split('\n');
+                var lastLineCode = sourceCodeArray.pop().slice(4);
+
+                $.ajax({
+                    type: 'POST',
+                    url: runShellApi,
+                    contentType: 'application/json',
+                    dataType: 'json',
+                    data: JSON.stringify({code: lastLineCode}),
+                    success: function(data) {
+                        var ret = data.ret,
+                            shellDisplay = sourceCode + '\n' + ret + '>>> ';
+                        $textarea.val(shellDisplay);
+                    }
+                });
+            }
+        }).on('click', '#py-shell-run-btn', function() {
+            var $textarea = $('#py-shell-editor'),
+                sourceCode = $textarea.val();
 
             $.ajax({
                 type: 'POST',
-                url: runShellApi,
+                url: runSourceApi,
                 contentType: 'application/json',
                 dataType: 'json',
-                data: JSON.stringify({code: lastLineCode}),
+                data: JSON.stringify({code: sourceCode}),
                 success: function(data) {
-                    var ret = data.ret,
-                        shellDisplay = sourceCode + '\n' + ret + '>>> ';
-                    $textarea.val(shellDisplay);
+                    $('#py-shell-ret-display').val(data.ret);
                 }
-            });
-        }
-    }).on('click', '#py-shell-run-btn', function() {
-        var $textarea = $('#py-shell-editor'),
-            sourceCode = $textarea.val();
-
-        $.ajax({
-            type: 'POST',
-            url: runSourceApi,
-            contentType: 'application/json',
-            dataType: 'json',
-            data: JSON.stringify({code: sourceCode}),
-            success: function(data) {
-                $('#py-shell-ret-display').val(data.ret);
-            }
-        })
-    }).on('click', '#py-shell-clean-btn', function() {
-        $('.py-shell-editor-molokai').val('');
+            })
+        }).on('click', '#py-shell-clean-btn', function() {
+            $('.py-shell-editor-molokai').val('');
+        });
     });
 
     gitbook.events.bind('page.change', function(event, config) {
-        insertPyShell();
+        // insertPyShell();
     });
+
 });
