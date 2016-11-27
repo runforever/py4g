@@ -27,7 +27,7 @@
 * Pythonic
     * [装饰器](chapter-3/decorater.md)
     * [切片与列表解析](chapter-3/list_comprehension.md)
-    * [函数式编程](#)
+    * [函数式编程](chapter-3/fp.md)
     * [Mixin](#)
 
 * 提高编程效率
