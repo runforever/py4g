@@ -1,0 +1,821 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>函数式编程 · 如何教妹子学Python</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pyshell/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href=".." />
+    
+    
+    <link rel="prev" href="list_comprehension.html" />
+    
+
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">序</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introductory/why.html">
+            
+                <a href="../introductory/why.html">
+            
+                    
+                    为什么要写这本书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../introductory/about.html">
+            
+                <a href="../introductory/about.html">
+            
+                    
+                    关于我
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../introductory/warning.html">
+            
+                <a href="../introductory/warning.html">
+            
+                    
+                    重要说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapter-1/attitude.html">
+            
+                <a href="../chapter-1/attitude.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapter-1/charm.html">
+            
+                <a href="../chapter-1/charm.html">
+            
+                    
+                    Python 语言的魅力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapter-1/Python2or3.html">
+            
+                <a href="../chapter-1/Python2or3.html">
+            
+                    
+                    Python2 or Python3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapter-2/basic_type.html">
+            
+                <a href="../chapter-2/basic_type.html">
+            
+                    
+                    基本数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapter-2/variables.html">
+            
+                <a href="../chapter-2/variables.html">
+            
+                    
+                    列表、变量、流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapter-2/tuple_dict.html">
+            
+                <a href="../chapter-2/tuple_dict.html">
+            
+                    
+                    元组、字典、集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter-2/dev_tool.html">
+            
+                <a href="../chapter-2/dev_tool.html">
+            
+                    
+                    聊聊开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../chapter-2/function.html">
+            
+                <a href="../chapter-2/function.html">
+            
+                    
+                    函数、脚本文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../chapter-2/module.html">
+            
+                <a href="../chapter-2/module.html">
+            
+                    
+                    模块、包、设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../chapter-2/debug.html">
+            
+                <a href="../chapter-2/debug.html">
+            
+                    
+                    Bug 和 Debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../chapter-2/oop.html">
+            
+                <a href="../chapter-2/oop.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    Pythonic
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="decorater.html">
+            
+                <a href="decorater.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="list_comprehension.html">
+            
+                <a href="list_comprehension.html">
+            
+                    
+                    切片与列表解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.3" data-path="fp.html">
+            
+                <a href="fp.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="..">
+            
+                <span>
+            
+                    
+                    Mixin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    提高编程效率
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="..">
+            
+                <span>
+            
+                    
+                    什么是重复造轮子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >函数式编程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;">&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;</h1><blockquote><p>&#x4E0D;&#x80FD;&#x5F71;&#x54CD;&#x4F60;&#x7F16;&#x7A0B;&#x89C2;&#x70B9;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x4E0D;&#x503C;&#x5F97;&#x4F60;&#x53BB;&#x5B66;&#x3002;&#x2014;&#x2014;Alan Perlis</p></blockquote><p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B66;&#x8FC7;&#x547D;&#x4EE4;&#x5F0F;&#x7F16;&#x7A0B;&#x8303;&#x5F0F;&#xFF0C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7F16;&#x7A0B;&#x8303;&#x5F0F;&#xFF0C;&#x800C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x8981;&#x5B66;&#x4E60;&#x4E00;&#x79CD;&#x5168;&#x65B0;&#x7684;&#x7F16;&#x7A0B;&#x8303;&#x5F0F;&#xFF0C;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#xFF08;Function Programing&#xFF09;&#x3002;</p><p>&#x6BCF;&#x5F53;&#x6211;&#x60F3;&#x5230; FP&#xFF08;Function Programing&#xFF09;&#x7684;&#x6211;&#x603B;&#x4F1A;&#x8054;&#x60F3;&#x5230;&#x300A;&#x9ED1;&#x5BA2;&#x5E1D;&#x56FD;&#x300B;&#x4E2D; Neo &#x7684;&#x89C9;&#x9192;&#xFF0C;&#x89C9;&#x5F97; FP &#x5C31;&#x662F;&#x67D0;&#x79CD;&#x9ED1;&#x79D1;&#x6280;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A; FP &#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x795E;&#x5947;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x662F;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x7F16;&#x7A0B;&#x8303;&#x5F0F;&#x800C;&#x5DF2;&#x3002;</p><p>     <a href="http://cdn.defcoding.com/08812C60-2130-4B3C-9395-D86DEE9FFDF3.png" title="neo" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/08812C60-2130-4B3C-9395-D86DEE9FFDF3.png" alt="neo">
+     </a></p><h3 id="fp-&#x5E26;&#x6765;&#x4E86;&#x4EC0;&#x4E48;">FP &#x5E26;&#x6765;&#x4E86;&#x4EC0;&#x4E48;</h3><p>&#x5F88;&#x96BE;&#x901A;&#x8FC7;&#x4E00;&#x53E5;&#x8BDD;&#x6765;&#x8BA9;&#x8BFB;&#x8005;&#x4F53;&#x4F1A;&#x5230; FP &#x5BF9;&#x601D;&#x8003;&#x65B9;&#x5F0F;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x6211;&#x53EA;&#x80FD;&#x5148;&#x544A;&#x8BC9;&#x8BFB;&#x8005;&#x6211;&#x4E2A;&#x4EBA;&#x7684;&#x611F;&#x53D7;&#xFF0C;&#x5B66;&#x4E60;&#x548C;&#x4F7F;&#x7528; FP &#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x540E;&#xFF0C;&#x6211;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5148;&#x62BD;&#x8C61;&#x7684;&#x53BB;&#x63CF;&#x8FF0;&#x95EE;&#x9898;&#xFF0C;&#x5C06;&#x95EE;&#x9898;&#x8F6C;&#x5316;&#x6210;&#x62BD;&#x8C61;&#x7684;&#x63CF;&#x8FF0;&#x540E;&#x5F88;&#x81EA;&#x7136;&#x7684;&#x5C31;&#x80FD;&#x628A;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5199;&#x51FA;&#x6765;&#xFF0C;&#x800C;&#x4E4B;&#x524D;&#x6211;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x8FC7;&#x7A0B;&#x662F;&#x601D;&#x8003;&#x5982;&#x4F55;&#x628A;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x76F8;&#x5E94;&#x7684;&#x6280;&#x672F;&#x5957;&#x5230;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E0A;&#x3002;</p><h3 id="fp-&#x7684;&#x7279;&#x70B9;">FP &#x7684;&#x7279;&#x70B9;</h3><ol><li>&#x51FD;&#x6570;&#x662F;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#x3002;
+</li>
+<li>&#x9012;&#x5F52;&#x3002;
+</li>
+<li>&#x72B6;&#x6001;&#x4E0D;&#x53EF;&#x53D8;&#x3002;
+</li>
+<li>&#x95ED;&#x5305;&#xFF08;closure&#xFF09;&#x3002;
+</li>
+<li>&#x533F;&#x540D;&#x51FD;&#x6570;&#x3002;
+</li>
+<li>&#x9AD8;&#x9636;&#x51FD;&#x6570;&#x3002;
+</li></ol>
+<p><strong>&#x5BF9;&#x6211;&#x800C;&#x8A00;&#xFF0C;FP &#x7684;&#x7279;&#x70B9;&#x53EA;&#x662F;&#x5B83;&#x7684;&#x5916;&#x5728;&#x8868;&#x73B0;&#x5F62;&#x5F0F;&#xFF0C;&#x800C;&#x4ED6;&#x7684;&#x5185;&#x6DB5;&#x662F; FP &#x7684;&#x601D;&#x7EF4;&#x65B9;&#x5F0F;&#x3002;</strong></p><h3 id="&#x51FD;&#x6570;&#x662F;&#x4E00;&#x7B49;&#x516C;&#x6C11;">&#x51FD;&#x6570;&#x662F;&#x4E00;&#x7B49;&#x516C;&#x6C11;</h3><p>&#x5B66;&#x4E60; <a href="chapter-3/decorater.md">&#x88C5;&#x9970;&#x5668;</a> &#x7684;&#x65F6;&#x5019;&#x5DF2;&#x7ECF;&#x5B66;&#x8FC7;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#xFF08;first class&#xFF09;&#x7684;&#x6982;&#x5FF5;&#xFF0C;Python &#x4E2D;&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#xFF0C;&#x51FD;&#x6570;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x81EA;&#x7136;&#x662F;&#x4E5F;&#x662F;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#x3002;</p><h3 id="&#x9012;&#x5F52;">&#x9012;&#x5F52;</h3><p>&#x5728; FP &#x4E2D;&#x9012;&#x5F52;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x6765;&#x63CF;&#x8FF0;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x8981;&#x6BD4;&#x5FAA;&#x73AF;&#x7684;&#x65B9;&#x5F0F;&#x66F4;&#x81EA;&#x7136;&#x3002;</p><p>&#x76F4;&#x63A5;&#x8BB2;&#x9012;&#x5F52;&#x7684;&#x6982;&#x5FF5;&#x4F1A;&#x5F88;&#x62BD;&#x8C61;&#xFF0C;&#x6211;&#x6253;&#x7B97;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x8FC7;&#x7A0B;&#x6765;&#x8BA9;&#x5927;&#x5BB6;&#x4E86;&#x89E3;&#x9012;&#x5F52;&#x3002;</p><h4 id="&#x6392;&#x5E8F;&#x95EE;&#x9898;&#x4E4B;&#x5FEB;&#x901F;&#x6392;&#x5E8F;">&#x6392;&#x5E8F;&#x95EE;&#x9898;&#x4E4B;&#x5FEB;&#x901F;&#x6392;&#x5E8F;</h4><p>&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x662F;&#x7F16;&#x7A0B;&#x5B66;&#x4E60;&#x4E2D;&#x6BD4;&#x8F83;&#x57FA;&#x7840;&#x7684;&#x7B97;&#x6CD5;&#x4E86;&#xFF0C;&#x7ED9;&#x4F60;&#x4E00;&#x5806;&#x65E0;&#x5E8F;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x7ECF;&#x8FC7;&#x7B97;&#x6CD5;&#x6392;&#x5E8F;&#x540E;&#xFF0C;&#x5F97;&#x5230;&#x6709;&#x5E8F;&#x7684;&#x5E8F;&#x5217;&#x3002;</p><p>&#x4F8B;&#x5982;&#xFF1A;</p><p>&#x7ED9;&#x5B9A;&#x65E0;&#x5E8F;&#x5217;&#x8868; <code>[4, 1, 5, 7, 9, 11, 6]</code></p><p>&#x7B97;&#x6CD5;&#x7684;&#x7ED3;&#x679C;&#x662F; <code>[1, 4, 5, 6, 7, 9, 11]</code></p><h4 id="&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x7684;&#x6B65;&#x9AA4;&#xFF1A;">&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x7684;&#x6B65;&#x9AA4;&#xFF1A;</h4><ol><li>&#x9009;&#x62E9;&#x5217;&#x8868;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4E3A;&#x57FA;&#x51C6;&#x5143;&#x7D20;&#x3002;
+</li>
+<li>&#x5269;&#x4E0B;&#x5217;&#x8868;&#x4E2D;&#x9009;&#x51FA;&#x6BD4;&#x57FA;&#x51C6;&#x5143;&#x7D20;&#x5C0F;&#x7684;&#x653E;&#x5728;&#x57FA;&#x51C6;&#x5143;&#x7D20;&#x7684;&#x5DE6;&#x8FB9;&#xFF0C;&#x5927;&#x7684;&#x653E;&#x5728;&#x53F3;&#x8FB9;&#x3002;
+</li>
+<li>&#x57FA;&#x51C6;&#x5143;&#x7D20;&#x5DE6;&#x53F3;&#x4E24;&#x8FB9;&#x7684;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x91CD;&#x590D; 1&#xFF0C;2 &#x6B65;&#x9AA4;&#xFF0C;&#x76F4;&#x5230;&#x6392;&#x5E8F;&#x5B8C;&#x6210;&#x3002;
+</li></ol>
+<p>&#x4E0B;&#x56FE;&#x4E3A;&#x6392;&#x5E8F;&#x8FC7;&#x7A0B;&#xFF1A;
+     <a href="http://cdn.defcoding.com/679D8DF42A0A385B4ED39AE27F385AD1.png" title="quick sort process" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/679D8DF42A0A385B4ED39AE27F385AD1.png" alt="quick sort process">
+     </a></p><h4 id="&#x6B65;&#x9AA4;&#x89E3;&#x8BFB;&#xFF1A;">&#x6B65;&#x9AA4;&#x89E3;&#x8BFB;&#xFF1A;</h4><ol><li><code>4</code> &#x4E3A;&#x57FA;&#x51C6;&#x5143;&#x7D20;&#xFF0C;&#x5DE6;&#x8FB9;&#x5217;&#x8868; <code>[3, 1, 2]</code>&#xFF0C;&#x53F3;&#x8FB9;&#x5217;&#x8868; <code>[8, 6, 7, 9]</code>&#x3002;
+</li>
+<li><code>3</code> &#x4E3A;&#x57FA;&#x51C6;&#x5143;&#x7D20;&#xFF0C;&#x5DE6;&#x8FB9;&#x5217;&#x8868; <code>[1, 2]</code>&#xFF0C;&#x53F3;&#x8FB9;&#x5217;&#x8868;&#x4E3A; <code>[]</code>&#x3002;
+</li>
+<li><code>1</code> &#x4E3A;&#x57FA;&#x51C6;&#x5143;&#x7D20;&#xFF0C;&#x5DE6;&#x8FB9;&#x5217;&#x8868; <code>[]</code>&#xFF0C;&#x53F3;&#x8FB9;&#x5217;&#x8868;&#x4E3A; <code>[2]</code>&#x3002;
+</li>
+<li><code>2</code> &#x4E3A;&#x57FA;&#x51C6;&#x5143;&#x7D20;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE; 2&#x3002;
+</li>
+<li>&#x91CD;&#x590D;&#x4EE5;&#x4E0A;&#x7C7B;&#x4F3C;&#x6B65;&#x9AA4;&#x76F4;&#x5230;&#x7B2C; 9 &#x6B65;&#x6392;&#x5E8F;&#x5B8C;&#x6210;&#x3002;
+</li></ol>
+<h4 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x89E3;&#x51B3;&#x65B9;&#x6848;</h4><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x4E0A;&#x9762;&#x7684;&#x8FC7;&#x7A0B;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4F2A;&#x4EE3;&#x7801;&#x63CF;&#x8FF0;&#x3002;</p><pre><code># &#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x8FC7;&#x7A0B;
+qsort(unorder_list):
+    # &#x5224;&#x65AD;&#x5217;&#x8868;&#x957F;&#x5EA6;&#xFF0C;&#x5982;&#x679C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E; 1 &#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x5217;&#x8868;&#x672C;&#x8EAB;
+    if len(unorder_list) &lt;= 1:
+        return unorder_list
+
+    # &#x83B7;&#x53D6;&#x57FA;&#x51C6;&#x5143;&#x7D20;
+    elem = unorder_list[0]
+
+    # &#x7528;&#x5217;&#x8868;&#x89E3;&#x6790;&#x627E;&#x51FA;&#x6240;&#x6709;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x57FA;&#x51C6;&#x5143;&#x7D20;&#x7684;&#x503C;&#x5B58;&#x5230;&#x5DE6;&#x8FB9;&#x5217;&#x8868;&#x4E2D;
+    left_list = [i for i in unorder_list[1:] if i &lt;= elem]
+
+    # &#x7528;&#x5217;&#x8868;&#x89E3;&#x6790;&#x627E;&#x51FA;&#x6240;&#x6709;&#x5927;&#x4E8E;&#x57FA;&#x51C6;&#x5143;&#x7D20;&#x7684;&#x503C;&#x5B58;&#x5230;&#x53F3;&#x8FB9;&#x5217;&#x8868;&#x4E2D;
+    right_list = [i for i in unorder_list[1:] if i &gt; elem]
+
+    # &#x5DE6;&#x8FB9;&#x5217;&#x8868;&#x7EE7;&#x7EED;&#x6392;&#x5E8F;
+    sort_left_list = qsort(left_list)
+
+    # &#x53F3;&#x8FB9;&#x5217;&#x8868;&#x7EE7;&#x7EED;&#x6392;&#x5E8F;
+    sort_right_list = qsort(right_list)
+
+    # &#x8FD4;&#x56DE;&#x6392;&#x597D;&#x5E8F;&#x7684;&#x7ED3;&#x679C;
+    return sort_left_list + [elem] + sort_right_list</code></pre>
+<p>&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x7528;&#x5230;&#x4E86;&#x7B97;&#x6CD5;&#x4E2D;&#x7684; <a href="https://zh.wikipedia.org/wiki/&#x5206;&#x6CBB;&#x6CD5;" target="_blank">&#x5206;&#x6CBB;&#x601D;&#x60F3;</a>&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x8BF4;&#x5C31;&#x662F;&#x628A;&#x5927;&#x95EE;&#x9898;&#x5206;&#x6210;&#x6027;&#x8D28;&#x4E00;&#x6837;&#x5C0F;&#x95EE;&#x9898;&#xFF0C;
+&#x5206;&#x522B;&#x5BF9;&#x6BCF;&#x4E2A;&#x5C0F;&#x95EE;&#x9898;&#x6C42;&#x89E3;&#xFF0C;&#x518D;&#x628A;&#x5C0F;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x5408;&#x5E76;&#x5F97;&#x5230;&#x5927;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x3002;</p><p>&#x4E0A;&#x8FF0;&#x4F2A;&#x4EE3;&#x7801;&#x4E2D; <code>qsort</code> &#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x4E86; <code>qsort</code> &#x51FD;&#x6570;&#x6765;&#x89E3;&#x51B3;&#x6392;&#x5E8F;&#x5B50;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x79CD;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x8C03;&#x7528;&#x81EA;&#x5DF1;&#x7684;&#x6280;&#x672F;&#x53EB;&#x505A;&#x9012;&#x5F52;&#xFF08;Recursion&#xFF09;&#xFF0C;&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x4E5F;&#x6B63;&#x662F;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x5E94;&#x7528;&#x5206;&#x6CBB;&#x7684;&#x601D;&#x60F3;&#x3002;</p><p>&#x53E6;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x628A;&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x5F52;&#x7EB3;&#x6210;&#x7C7B;&#x4F3C;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x7684;&#x66F4;&#x7B80;&#x5355;&#x62BD;&#x8C61;&#x63CF;&#x8FF0;&#xFF1A;</p><pre><code class="lang-python">qsort(l) = l, <span class="hljs-keyword">if</span> len(l) &lt;= <span class="hljs-number">1</span>
+qsort(l) = qsort(left_l) + l[<span class="hljs-number">0</span>] + qsort(right_l)</code></pre>
+<p><strong>&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</strong></p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">qsort</span><span class="hljs-params">(unorder_list)</span>:</span>
+    <span class="hljs-keyword">return</span> qsort([i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> unorder_list[<span class="hljs-number">1</span>:] <span class="hljs-keyword">if</span> i &lt;= unorder_list[<span class="hljs-number">0</span>]]) + [unorder_list[<span class="hljs-number">0</span>]] + qsort([i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> unorder_list[<span class="hljs-number">1</span>:] <span class="hljs-keyword">if</span> i &gt; unorder_list[<span class="hljs-number">0</span>]]) <span class="hljs-keyword">if</span> len(unorder_list) &gt; <span class="hljs-number">1</span> <span class="hljs-keyword">else</span> unorder_list
+
+<span class="hljs-keyword">print</span> qsort([<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>, <span class="hljs-number">11</span>, <span class="hljs-number">6</span>])
+<span class="hljs-comment"># [1, 4, 5, 6, 7, 9, 11]</span></code></pre>
+<p>&#x8FD9;&#x4E24;&#x884C;&#x4EE3;&#x7801;&#x5DF2;&#x7ECF;&#x8FBE;&#x5230;&#x63CF;&#x8FF0;&#x95EE;&#x9898;&#x7684;&#x76EE;&#x7684;&#x4E86;&#xFF0C;&#x80FD;&#x5199;&#x7684;&#x5982;&#x6B64;&#x7B80;&#x5355;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4E00;&#x5F00;&#x59CB;&#x628A;&#x95EE;&#x9898;&#x8F6C;&#x5316;&#x6210;&#x4E86;&#x7B80;&#x5355;&#x7684;&#x62BD;&#x8C61;&#x63CF;&#x8FF0;&#x3002;</p><h4 id="&#x518D;&#x770B;&#x9012;&#x5F52;">&#x518D;&#x770B;&#x9012;&#x5F52;</h4><p>&#x901A;&#x8FC7;&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x9012;&#x5F52;&#x9002;&#x7528;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x57FA;&#x672C;&#x53EF;&#x4EE5;&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p><ol><li>&#x5206;&#x6790;&#x95EE;&#x9898;&#xFF0C;&#x786E;&#x5B9A;&#x95EE;&#x9898;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5206;&#x89E3;&#x4E3A;&#x6027;&#x8D28;&#x76F8;&#x540C;&#x7684;&#x5C0F;&#x95EE;&#x9898;&#x3002;
+</li>
+<li>&#x786E;&#x5B9A;&#x9012;&#x5F52;&#x7684;&#x51FA;&#x53E3;&#x3002;
+</li></ol>
+<p>&#x9012;&#x5F52;&#x51FA;&#x53E3;&#x6307;&#x7684;&#x662F;&#x8DF3;&#x51FA;&#x9012;&#x5F52;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x9012;&#x5F52;&#x51FA;&#x53E3;&#xFF0C;&#x9012;&#x5F52;&#x7A0B;&#x5E8F;&#x5C31;&#x4F1A;&#x4E00;&#x76F4;&#x8FD0;&#x884C;&#x76F4;&#x5230;&#x5360;&#x6EE1;&#x5185;&#x5B58;&#x7684;&#x6808;&#x7A7A;&#x95F4;&#xFF0C;&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x7684;&#x9012;&#x5F52;&#x51FA;&#x53E3;&#x662F; <code>list</code> &#x7684;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 1&#x3002;</p><blockquote><p>&#x9012;&#x5F52;&#x8BA1;&#x65F6;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x628A;&#x95EE;&#x9898;&#x8F6C;&#x5316;&#x4E3A;&#x7B80;&#x5355;&#x7684;&#x62BD;&#x8C61;&#x63CF;&#x8FF0;</p></blockquote><h3 id="&#x72B6;&#x6001;&#x4E0D;&#x53EF;&#x53D8;">&#x72B6;&#x6001;&#x4E0D;&#x53EF;&#x53D8;</h3><p>&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x63D0;&#x5021;&#x7F16;&#x5199;&#x7EAF;&#x51FD;&#x6570;&#xFF08;Pure Function&#xFF09;&#xFF0C;&#x7EAF;&#x51FD;&#x6570;&#x7684;&#x7279;&#x70B9;&#x662F;&#x76F8;&#x540C;&#x7684;&#x8F93;&#x5165;&#x6C38;&#x8FDC;&#x8FD4;&#x56DE;&#x76F8;&#x540C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x8FD9;&#x79CD;&#x51FD;&#x6570;&#x4E0D;&#x53D7;&#x5916;&#x754C;&#x5F71;&#x54CD;&#x4E5F;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x5916;&#x754C;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x526F;&#x4F5C;&#x7528;&#xFF08;side effect&#xFF09;&#x3002;</p><h4 id="&#x4EC0;&#x4E48;&#x662F;&#x526F;&#x4F5C;&#x7528;">&#x4EC0;&#x4E48;&#x662F;&#x526F;&#x4F5C;&#x7528;</h4><pre><code class="lang-python">foo = <span class="hljs-string">&apos;foo&apos;</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">equal_foo</span><span class="hljs-params">(string)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span> <span class="hljs-keyword">if</span> string == foo <span class="hljs-keyword">else</span> <span class="hljs-keyword">False</span>
+
+<span class="hljs-comment"># &#x8C03;&#x7528;</span>
+equal_foo(<span class="hljs-string">&apos;foo&apos;</span>)
+<span class="hljs-comment"># True</span>
+
+<span class="hljs-comment"># &#x526F;&#x4F5C;&#x7528;&#x4F53;&#x73B0;</span>
+foo = <span class="hljs-string">&apos;bar&apos;</span>
+equal_foo(<span class="hljs-string">&apos;foo&apos;</span>)
+<span class="hljs-comment"># False</span>
+
+<span class="hljs-comment"># &#x65E0;&#x526F;&#x4F5C;&#x7528;&#x7248;&#x672C;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">good_equal_foo</span><span class="hljs-params">(string)</span>:</span>
+    foo = <span class="hljs-string">&apos;foo&apos;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span> <span class="hljs-keyword">if</span> string == foo <span class="hljs-keyword">else</span> <span class="hljs-keyword">False</span>
+
+<span class="hljs-comment"># &#x76F8;&#x540C;&#x7684;&#x8F93;&#x5165;&#x65E0;&#x8BBA;&#x8C03;&#x7528;&#x591A;&#x5C11;&#x6B21;&#xFF0C;&#x7ED3;&#x679C;&#x90FD;&#x4E00;&#x6837;</span>
+good_equal_foo(<span class="hljs-string">&apos;foo&apos;</span>)
+<span class="hljs-comment"># True</span></code></pre>
+<p><code>equal_foo</code> &#x51FD;&#x6570;&#x7ED9;&#x6211;&#x4EEC;&#x5C55;&#x793A;&#x4E86;&#x526F;&#x4F5C;&#x7528;&#x5E26;&#x6765;&#x7684;&#x5371;&#x5BB3;&#xFF0C;&#x5B9E;&#x9645;&#x7F16;&#x7A0B;&#x4E2D;&#xFF0C;&#x6CA1;&#x6709;&#x526F;&#x4F5C;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x8981;&#x6BD4;&#x6709;&#x526F;&#x4F5C;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x597D;&#x7EF4;&#x62A4;&#x3002;</p><blockquote><p>&#x5728;&#x8BBE;&#x8BA1;&#x51FD;&#x6570;&#x7684;&#x540C;&#x65F6;&#x8981;&#x8003;&#x8651;&#x6D88;&#x9664;&#x51FD;&#x6570;&#x526F;&#x4F5C;&#x7528;</p></blockquote><h3 id="&#x95ED;&#x5305;">&#x95ED;&#x5305;</h3><p>&#x95ED;&#x5305;&#x7684;&#x6982;&#x5FF5;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x6666;&#x6DA9;&#xFF0C;&#x6211;&#x8FD8;&#x662F;&#x5148;&#x4E3E;&#x4F8B;&#x8BA9;&#x5927;&#x5BB6;&#x4E86;&#x89E3;&#x4ED6;&#x7684;&#x4F5C;&#x7528;&#x3002;</p><h4 id="&#x518D;&#x770B;&#x88C5;&#x9970;&#x5668;">&#x518D;&#x770B;&#x88C5;&#x9970;&#x5668;</h4><pre><code class="lang-python"><span class="hljs-comment"># coding: utf-8</span>
+
+<span class="hljs-keyword">import</span> time
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">log_time</span><span class="hljs-params">(func)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper_func</span><span class="hljs-params">()</span>:</span>
+        start_time = time.clock()
+        ret = func()
+        end_time = time.clock()
+        run_time = end_time - start_time
+        <span class="hljs-keyword">print</span> run_time
+        <span class="hljs-keyword">return</span> ret
+    <span class="hljs-keyword">return</span> wrapper_func
+
+
+<span class="hljs-meta">@log_time</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run_function</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> xrange(<span class="hljs-number">100000</span>):
+        <span class="hljs-keyword">print</span> i
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    run_function()</code></pre>
+<p>&#x88C5;&#x9970;&#x5668;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x95ED;&#x5305;&#xFF0C;&#x95ED;&#x5305;&#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p><ol><li>&#x51FD;&#x6570;&#x5185;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#x3002;
+</li>
+<li>&#x5D4C;&#x5957;&#x7684;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;&#x5916;&#x5C42;&#x51FD;&#x6570;&#x7684;&#x53D8;&#x91CF;&#x3002;
+</li>
+<li>&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;
+</li></ol>
+<p><code>log_time</code> &#x662F;&#x4E00;&#x4E2A;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5D4C;&#x5957;&#x51FD;&#x6570; <code>wrapper_func</code> &#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;&#x5916;&#x5C42;&#x51FD;&#x6570; <code>log_time</code> &#x7684;&#x53D8;&#x91CF; <code>func</code>&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F; <code>wrapper_func</code>&#x3002;</p><p>&#x88C5;&#x9970;&#x5668;&#x662F;&#x95ED;&#x5305;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x4E4B;&#x4E00;&#xFF0C;&#x901A;&#x8FC7;&#x88C5;&#x9970;&#x5668;&#x6269;&#x5C55;&#x51FD;&#x6570;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x5BF9;&#x4EE3;&#x7801;&#x505A;&#x8FC7;&#x591A;&#x7684;&#x6539;&#x52A8;&#xFF0C;&#x8FD9;&#x79CD;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x53EF;&#x4EE5;&#x79F0;&#x4E3A;&#x51FD;&#x6570;&#x5DE5;&#x5382;&#xFF0C;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x751F;&#x6210;&#x51FD;&#x6570;&#x3002;</p><h4 id="&#x51FD;&#x6570;&#x5DE5;&#x5382;">&#x51FD;&#x6570;&#x5DE5;&#x5382;</h4><p><strong>&#x95EE;&#x9898;</strong>&#xFF1A;&#x5B9A;&#x4E49; <code>add1</code>&#xFF0C;<code>add2</code>&#xFF0C;<code>add3</code>...<code>add7</code> &#x51FD;&#x6570;&#xFF0C;&#x4F5C;&#x7528;&#x5206;&#x522B;&#x662F;&#x4F7F;&#x8F93;&#x5165;&#x52A0; 1&#xFF0C;2&#xFF0C;...&#xFF0C;7&#x3002;</p><pre><code class="lang-python"><span class="hljs-comment"># &#x5E38;&#x89C4;&#x65B9;&#x6848;&#xFF0C;&#x6328;&#x4E2A;&#x5B9A;&#x4E49;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add1</span><span class="hljs-params">(foo)</span>:</span>
+    <span class="hljs-keyword">return</span> foo + <span class="hljs-number">1</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add2</span><span class="hljs-params">(foo)</span>:</span>
+    <span class="hljs-keyword">return</span> foo + <span class="hljs-number">2</span>
+
+<span class="hljs-comment"># ... &#x91CD;&#x590D;&#x5B9A;&#x4E49;&#x4E0B;&#x53BB;&#x76F4;&#x5230; add7</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add7</span><span class="hljs-params">(foo)</span>:</span>
+    <span class="hljs-keyword">return</span> foo + <span class="hljs-number">1</span>
+
+
+<span class="hljs-comment"># &#x95ED;&#x5305;&#x65B9;&#x6848;&#xFF0C;&#x628A;&#x91CD;&#x590D;&#x5B9A;&#x4E49;&#x7684;&#x8FC7;&#x7A0B;&#x5199;&#x6210;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x51FD;&#x6570;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_factory</span><span class="hljs-params">(add_base)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_func</span><span class="hljs-params">(foo)</span>:</span>
+        <span class="hljs-keyword">return</span> foo + add_base
+    <span class="hljs-keyword">return</span> add_func
+
+add1 = add_factory(<span class="hljs-number">1</span>)
+add2 = add_factory(<span class="hljs-number">2</span>)
+<span class="hljs-comment"># ...</span>
+add7 = add_factory(<span class="hljs-number">7</span>)</code></pre>
+<p>&#x6211;&#x5728;&#x5199;&#x95ED;&#x5305;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x76F4;&#x601D;&#x8003;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x610F;&#x4E49;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x660E;&#x767D;&#x4E86;&#xFF0C;&#x4F9D;&#x7136;&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x91CD;&#x590D;&#x7684;&#x4EE3;&#x7801;&#xFF08;DRY &#x539F;&#x5219;&#xFF09;&#x3002;</p><p>&#x95ED;&#x5305;&#x5728;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x9650;&#x4E8E;&#x7BC7;&#x5E45;&#x4E0D;&#x80FD;&#x4E00;&#x4E00;&#x5217;&#x4E3E;&#xFF0C;&#x8BFB;&#x8005;&#x8981;&#x660E;&#x767D;&#x95ED;&#x5305;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x5B83;&#x7684;&#x51FA;&#x73B0;&#x4E0D;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x4EE3;&#x7801;&#x6666;&#x6DA9;&#x96BE;&#x61C2;&#xFF0C;&#x800C;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x4EE3;&#x7801;&#x66F4;&#x7B80;&#x5355;&#x66F4;&#x597D;&#x7EF4;&#x62A4;&#x3002;</p><h3 id="&#x533F;&#x540D;&#x51FD;&#x6570;">&#x533F;&#x540D;&#x51FD;&#x6570;</h3><p>&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x6CA1;&#x6709;&#x540D;&#x5B57;&#x7684;&#x51FD;&#x6570;&#x3002;Python &#x4F7F;&#x7528; <code>lambda</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x5B9A;&#x4E49;&#x533F;&#x540D;&#x51FD;&#x6570;&#x3002;
+<strong>&#x4F8B;&#x5B50;</strong></p><pre><code class="lang-python"><span class="hljs-comment"># &#x5E38;&#x89C4;&#x65B9;&#x5F0F;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add1</span><span class="hljs-params">(foo)</span>:</span>
+    <span class="hljs-keyword">return</span> foo + <span class="hljs-number">1</span>
+
+
+<span class="hljs-comment"># &#x533F;&#x540D;&#x51FD;&#x6570;&#x65B9;&#x5F0F;</span>
+add1 = <span class="hljs-keyword">lambda</span> foo: foo + <span class="hljs-number">1</span></code></pre>
+<p>&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230; <code>lambda</code> &#x51FD;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x65E0;&#x975E;&#x4E5F;&#x662F;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#x7684;&#x662F; Python &#x7684;&#x533F;&#x540D;&#x51FD;&#x6570;&#x9002;&#x5408;&#x5904;&#x7406;&#x7B80;&#x5355;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x590D;&#x6742;&#x7684;&#x51FD;&#x6570;&#x8FD8;&#x662F;&#x4F7F;&#x7528;&#x5E38;&#x89C4;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x8981;&#x66F4;&#x5408;&#x7406;&#x4E00;&#x4E9B;&#x3002;</p><p>&#x533F;&#x540D;&#x51FD;&#x6570;&#x6709;&#x4EC0;&#x4E48;&#x7528;&#xFF0C;&#x7B49;&#x6211;&#x4EEC;&#x628A;&#x9AD8;&#x9636;&#x51FD;&#x6570;&#x5B66;&#x4E86;&#x4E4B;&#x540E;&#x5C31;&#x77E5;&#x9053;&#x4E86;&#x3002;</p><h3 id="&#x9AD8;&#x9636;&#x51FD;&#x6570;">&#x9AD8;&#x9636;&#x51FD;&#x6570;</h3><p>&#x9AD8;&#x9636;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x662F;&#x5C06;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x88C5;&#x9970;&#x5668;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x9636;&#x51FD;&#x6570;&#x3002;</p><h4 id="map&#xFF0C;reduce&#xFF0C;filter-&#x51FD;&#x6570;">map&#xFF0C;reduce&#xFF0C;filter &#x51FD;&#x6570;</h4><h4 id="map-&#x51FD;&#x6570;">map &#x51FD;&#x6570;</h4><p><code>map</code> &#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;
+     <a href="http://cdn.defcoding.com/1EA456A9-536F-4445-B48C-41BD689430A6.png" title="map &#x51FD;&#x6570;&#x5B9A;&#x4E49;" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/1EA456A9-536F-4445-B48C-41BD689430A6.png" alt="map &#x51FD;&#x6570;&#x5B9A;&#x4E49;">
+     </a>
+&#x4ECE;&#x5B98;&#x65B9; API &#x6587;&#x6863;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;<code>map</code> &#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F; <code>function</code>&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x53EF;&#x4EE5;&#x8FED;&#x4EE3;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5982; <code>list</code> &#x6216;&#x8005; <code>tuple</code> &#x8FD9;&#x7C7B;&#x53EF;&#x8FED;&#x4EE3;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;
+&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x5217;&#x8868;&#x4E2D;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x662F; <code>function</code> &#x5904;&#x7406;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x3002;</p><p>&#x524D;&#x9762;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x5217;&#x8868;&#x89E3;&#x6790;&#x7684;&#x65F6;&#x5019;&#x7528;&#x5217;&#x8868;&#x89E3;&#x6790;&#x89E3;&#x51B3;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x6570;&#x5B66;&#x95EE;&#x9898;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x7528; <code>map</code> &#x6765;&#x89E3;&#x51B3;&#x3002;</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>=</mo><mo>{</mo><msup><mi>x</mi><mn>2</mn></msup><mo>&#x2223;</mo><mi>x</mi><mo>&#x2208;</mo><mrow><mi mathvariant="double-struck">N</mi></mrow><mo>}</mo></mrow><annotation encoding="application/x-tex">
+S=\{x^2 \mid x \in \mathbb{N}\}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8641079999999999em;"></span><span class="strut bottom" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mrel">=</span><span class="mopen">{</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mrel">&#x2223;</span><span class="mord mathit">x</span><span class="mrel">&#x2208;</span><span class="mord displaystyle textstyle uncramped"><span class="mord mathbb">N</span></span><span class="mclose">}</span></span></span></span></span></p><pre><code class="lang-python">N = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+
+<span class="hljs-comment"># &#x547D;&#x4EE4;&#x5F0F;&#x65B9;&#x6848;</span>
+S = []
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> N:
+    result = x ** <span class="hljs-number">2</span>
+    S.append(result)
+
+<span class="hljs-comment"># &#x5217;&#x8868;&#x89E3;&#x6790;&#x65B9;&#x6848;</span>
+S = [x**<span class="hljs-number">2</span> <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> N]
+<span class="hljs-comment"># [1, 4, 9, 16, 25]</span>
+
+<span class="hljs-comment"># map &#x51FD;&#x6570;&#x65B9;&#x6848;</span>
+S = map(<span class="hljs-keyword">lambda</span> x: x**<span class="hljs-number">2</span>, N)
+<span class="hljs-comment"># [1, 4, 9, 16, 25]</span></code></pre>
+<p><code>map</code> &#x51FD;&#x6570;&#x548C;&#x5217;&#x8868;&#x89E3;&#x6790;&#x90FD;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x76F4;&#x63A5;&#x7684;&#x4F7F;&#x7528;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x628A;&#x95EE;&#x9898;&#x89E3;&#x51B3;&#xFF0C;&#x8FD9;&#x79CD;&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;&#x4E13;&#x6CE8;&#x4E8E;&#x63CF;&#x8FF0;&#x95EE;&#x9898;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x800C;&#x547D;&#x4EE4;&#x5F0F;&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;&#x5219;&#x662F;&#x5F3A;&#x8C03;&#x4E8E;&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x3002;</p><p>&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x516C;&#x5F0F;&#x662F;&#x5BF9;&#x95EE;&#x9898;&#x7684;&#x62BD;&#x8C61;&#x6982;&#x62EC;&#xFF0C;&#x628A;&#x95EE;&#x9898;&#x7528;&#x7B80;&#x5355;&#x516C;&#x5F0F;&#x63CF;&#x8FF0;&#xFF0C;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x7684;&#x601D;&#x7EF4;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x540C;&#x6837;&#x662F;&#x628A;&#x95EE;&#x9898;&#x62BD;&#x8C61;&#x6210;&#x7EB3;&#x6210;&#x7C7B;&#x4F3C;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x4E00;&#x6837;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;
+&#x7136;&#x540E;&#x7528;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x5C06;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x63CF;&#x8FF0;&#x51FA;&#x6765;&#xFF0C;&#x51FD;&#x6570;&#x5F0F;&#x7684;&#x9B45;&#x529B;&#x4E5F;&#x5728;&#x4E8E;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x3002;</p><h4 id="reduce-&#x51FD;&#x6570;">reduce &#x51FD;&#x6570;</h4><p>&#x6211;&#x4EEC;&#x5728;&#x9AD8;&#x4E2D;&#x6570;&#x5B66;&#x7684;&#x65F6;&#x5019;&#x5B66;&#x8FC7;&#x9636;&#x4E58;&#xFF0C;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>!</mo><mo>=</mo><mn>1</mn><mo>&#xD7;</mo><mn>2</mn><mo>&#xD7;</mo><mn>3</mn><mo>&#xD7;</mo><mo>&#x22EF;</mo><mo>&#xD7;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">
+n!=1\times2\times3\times\cdots \times n
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit">n</span><span class="mclose">!</span><span class="mrel">=</span><span class="mord mathrm">1</span><span class="mbin">&#xD7;</span><span class="mord mathrm">2</span><span class="mbin">&#xD7;</span><span class="mord mathrm">3</span><span class="mbin">&#xD7;</span><span class="minner">&#x22EF;</span><span class="mbin">&#xD7;</span><span class="mord mathit">n</span></span></span></span></span></p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn><mo>!</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+0!=1
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathrm">0</span><span class="mclose">!</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span></span></p><p><code>reduce</code> &#x51FD;&#x6570;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x63CF;&#x8FF0;&#x8FD9;&#x79CD;&#x7C7B;&#x4F3C;&#x9636;&#x4E58;&#x7684;&#x95EE;&#x9898;&#xFF0C;<code>reduce</code> &#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#xFF1A;
+     <a href="http://cdn.defcoding.com/9DEB32C7-27C1-4785-96B8-5E9B980789D9.png" title="reduce &#x51FD;&#x6570;&#x5B9A;&#x4E49;" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/9DEB32C7-27C1-4785-96B8-5E9B980789D9.png" alt="reduce &#x51FD;&#x6570;&#x5B9A;&#x4E49;">
+     </a>
+&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x4E3A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4F20;&#xFF0C;&#x7ED3;&#x679C;&#x521D;&#x59CB;&#x503C;&#x4E3A;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x503C;&#x3002;</p><p><strong>&#x4EE3;&#x7801;</strong></p><pre><code class="lang-python">n = <span class="hljs-number">5</span>
+
+<span class="hljs-comment"># &#x4E0D;&#x4F20;&#x521D;&#x59CB;&#x503C;</span>
+result = reduce(<span class="hljs-keyword">lambda</span> x, y: x * y, xrange(<span class="hljs-number">1</span>, n+<span class="hljs-number">1</span>))
+<span class="hljs-comment"># result is 120</span>
+
+<span class="hljs-comment"># &#x4F20;&#x5165;&#x521D;&#x59CB;&#x503C;</span>
+result = reduce(<span class="hljs-keyword">lambda</span> x, y: x * y, xrange(<span class="hljs-number">1</span>, n+<span class="hljs-number">1</span>), <span class="hljs-number">3</span>)
+<span class="hljs-comment"># result is 360</span></code></pre>
+<h4 id="filter-&#x51FD;&#x6570;">filter &#x51FD;&#x6570;</h4><p><code>filter</code> &#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x7C7B;&#x4F3C;&#x4E8E;&#x6211;&#x4EEC;&#x5B66;&#x8FC7;&#x7684;&#x5E26; <code>if</code> &#x7684;&#x5217;&#x8868;&#x89E3;&#x6790;&#xFF0C;<code>filter</code> &#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;
+     <a href="http://cdn.defcoding.com/163E691C-BCF5-4B58-8A4B-15A0A19C20B7.png" title="filter &#x51FD;&#x6570;&#x5B9A;&#x4E49;" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/163E691C-BCF5-4B58-8A4B-15A0A19C20B7.png" alt="filter &#x51FD;&#x6570;&#x5B9A;&#x4E49;">
+     </a></p><p>&#x6211;&#x4EEC;&#x4F9D;&#x7136;&#x6765;&#x89E3;&#x51B3;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#x6240;&#x6709;&#x5076;&#x6570;&#x5143;&#x7D20;&#x7684;&#x95EE;&#x9898;&#x3002;</p><p>&#x5076;&#x6570;&#x7684;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#xFF1A;</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mstyle scriptlevel="0" displaystyle="true"><mo>{</mo><mn>2</mn><mi>k</mi><mo separator="true">:</mo><mi>k</mi><mo>&#x2208;</mo><mrow><mi mathvariant="double-struck">N</mi></mrow><mo>}</mo></mstyle></mrow></mrow><annotation encoding="application/x-tex">
+S={\displaystyle \{2k\colon k\in \mathbb {N} \}}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mrel">=</span><span class="mord displaystyle textstyle uncramped"><span class="reset-textstyle displaystyle textstyle uncramped"><span class="mopen">{</span><span class="mord mathrm">2</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mpunct">:</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mrel">&#x2208;</span><span class="mord displaystyle textstyle uncramped"><span class="mord mathbb">N</span></span><span class="mclose">}</span></span></span></span></span></span></span></p><p><strong>&#x4EE3;&#x7801;</strong></p><pre><code class="lang-python">N = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>]
+
+<span class="hljs-comment"># &#x547D;&#x4EE4;&#x5F0F;&#x65B9;&#x6848;</span>
+S = []
+<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> S:
+    <span class="hljs-keyword">if</span> k % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>:
+        S.append(k)
+
+<span class="hljs-comment"># &#x5217;&#x8868;&#x89E3;&#x6790;</span>
+S = [k <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> N <span class="hljs-keyword">if</span> k % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>]
+
+<span class="hljs-comment"># filter &#x51FD;&#x6570;&#x5F0F;&#x65B9;&#x6848;</span>
+S = filter(<span class="hljs-keyword">lambda</span> x: x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>, N)
+<span class="hljs-comment"># S is [2, 4, 6, 8]</span></code></pre>
+<p>&#x901A;&#x8FC7; <code>map</code>&#xFF0C;<code>reduce</code>&#xFF0C;<code>filter</code> &#x51FD;&#x6570;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B66;&#x5230;&#x4E86;&#x9AD8;&#x9636;&#x51FD;&#x6570;&#x7684;&#x7528;&#x5904;&#x548C;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x7684;&#x601D;&#x8003;&#x65B9;&#x5F0F;&#xFF0C;&#x6700;&#x540E;&#x8001;&#x751F;&#x5E38;&#x8C08;&#x7684;&#x662F;<strong>&#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x4E0D;&#x5B58;&#x5728;&#x94F6;&#x5F39;</strong>&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4E86;&#x89E3;&#x6BCF;&#x79CD;&#x7F16;&#x7A0B;&#x8303;&#x5F0F;&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5408;&#x9002;&#x7684;&#x573A;&#x666F;&#x7528;&#x5408;&#x9002;&#x7684;&#x6280;&#x672F;&#x53BB;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x3002;</p><h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3><p>&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x5F3A;&#x8C03;&#x7684;&#x662F; <code>what</code> &#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x800C;&#x4E0D;&#x662F; <code>how</code> &#x600E;&#x4E48;&#x505A;&#xFF0C;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x5F88;&#x96BE;&#x7528;&#x6587;&#x5B57;&#x63CF;&#x8FF0;&#x51FA;&#x4ED6;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4ED6;&#x7684;&#x7279;&#x70B9;&#x53BB;&#x9886;&#x4F1A;&#x4ED6;&#x7684;&#x5185;&#x6DB5;&#x3002;</p><p>&#x8FD9;&#x91CC;&#x6211;&#x53EA;&#x662F;&#x8BB2;&#x4E86;&#x6211;&#x4E2A;&#x4EBA;&#x5BF9;&#x4E8E;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x6211;&#x63A8;&#x8350;&#x8BFB;&#x8005;&#x53BB;&#x5B66;&#x4E60;&#x66F4;&#x591A;&#x5173;&#x4E8E;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x4ECE; <a href="https://zh.wikipedia.org/wiki/Scheme" target="_blank">Scheme</a> &#x5F00;&#x59CB;&#x3002;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="list_comprehension.html" class="navigation navigation-prev " aria-label="Previous page: 切片与列表解析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="..#" class="navigation navigation-next " aria-label="Next page: Mixin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"函数式编程","level":"2.3.3","depth":2,"next":{"title":"Mixin","level":"2.3.4","depth":2,"anchor":"#","path":".","ref":"#","articles":[]},"previous":{"title":"切片与列表解析","level":"2.3.2","depth":2,"path":"chapter-3/list_comprehension.md","ref":"chapter-3/list_comprehension.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","fancybox","katex","nocache","pyshell"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"nocache":{},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/runforever/py4g/issues"},"pyshell":{"apiHost":"http://pyshell.defcoding.com"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"如何教妹子学Python","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter-3/fp.md","mtime":"2016-11-27T16:14:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-27T16:16:47.600Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pyshell/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
