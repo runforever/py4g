@@ -177,7 +177,7 @@ class BaseZombie(object):
         '''
         使用道具
         '''
-        print 'use props
+        print 'use props'
 
 # 组合方法
 # 定义道具类
@@ -193,11 +193,11 @@ class Props(object):
         '''
         使用道具
         '''
-        print 'use props
+        print 'use props'
 
 class BaseZombie(object):
 
-    def init(self, health, move_speed)
+    def init(self, health, move_speed):
         self.health = health
         self.move_speed = move_speed
         # 添加道具方法
