@@ -26,9 +26,22 @@
 
 * Pythonic
     * [装饰器](chapter-3/decorater.md)
-    * [切片与列表解析](chapter-3/list_comprehension.md)
+    * [切片、列表解析](chapter-3/list_comprehension.md)
+    * [迭代器、生成器](#)
     * [函数式编程](chapter-3/fp.md)
-    * [Mixin](#)
+    * [继承顺序和super](#)
+    * [Mixin](chapter-3/mixin.md)
+    * [常用内建函数](#)
 
-* 提高编程效率
-    * [什么是重复造轮子](#)
+* 工程化
+    * [异常处理](#)
+    * [单元测试](#)
+    * [常用库](#)
+
+* 开始做项目
+    * [first project](#)
+    * [管理你的源代码](#)
+    * [second project](#)
+
+* 结束
+    * [新的开始](#)
