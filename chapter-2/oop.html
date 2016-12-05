@@ -747,43 +747,43 @@ zombie = NormalZombie(<span class="hljs-number">10</span>, <span class="hljs-num
 </li>
 <li>&#x9AD8;&#x5185;&#x805A;&#xFF0C;&#x4F4E;&#x8026;&#x5408;
 </li></ol>
-<p>OOP &#x7684;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x800C;&#x6211;&#x5BF9;&#x8FD9;&#x4E24;&#x6761;&#x7684;&#x5370;&#x8C61;&#x6700;&#x6DF1;&#x523B;&#x4E5F;&#x7528;&#x7684;&#x6700;&#x591A;&#xFF0C;&#x65B0;&#x624B;&#x4F7F;&#x7528; OOP &#x5F88;&#x5BB9;&#x6613;&#x72AF;&#x7684;&#x9519;&#x8BEF;&#x5C31;&#x662F;&#x53EA;&#x7528;&#x7EE7;&#x627F;&#x6765;&#x8FBE;&#x5230;&#x4EE3;&#x7801;&#x590D;&#x7528;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x7EC4;&#x5408;&#x4E5F;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x76F8;&#x540C;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x4F7F;&#x7528;&#x7EC4;&#x5408;&#x80FD;&#x4F4E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x5EA6;&#xFF08;&#x4F9D;&#x8D56;&#xFF09;&#xFF0C;&#x540C;&#x65F6;&#x80FD;&#x907F;&#x514D;&#x4E0A;&#x5E1D;&#x7C7B;&#xFF08;&#x4E00;&#x4E2A;&#x7C7B;&#x505A;&#x4E86;&#x6240;&#x6709;&#x7684;&#x4E8B;&#x60C5;&#xFF09;&#x7684;&#x51FA;&#x73B0;&#x3002;</p><p><strong>&#x50F5;&#x5C38;&#x52A0;&#x5165;&#x4F7F;&#x7528;&#x9053;&#x5177;&#x529F;&#x80FD;</strong></p><pre><code class="lang-python"># &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x57FA;&#x7C7B;&#x4E0A;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;
-class BaseZombie(object):
+<p>OOP &#x7684;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x800C;&#x6211;&#x5BF9;&#x8FD9;&#x4E24;&#x6761;&#x7684;&#x5370;&#x8C61;&#x6700;&#x6DF1;&#x523B;&#x4E5F;&#x7528;&#x7684;&#x6700;&#x591A;&#xFF0C;&#x65B0;&#x624B;&#x4F7F;&#x7528; OOP &#x5F88;&#x5BB9;&#x6613;&#x72AF;&#x7684;&#x9519;&#x8BEF;&#x5C31;&#x662F;&#x53EA;&#x7528;&#x7EE7;&#x627F;&#x6765;&#x8FBE;&#x5230;&#x4EE3;&#x7801;&#x590D;&#x7528;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x7EC4;&#x5408;&#x4E5F;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x76F8;&#x540C;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x4F7F;&#x7528;&#x7EC4;&#x5408;&#x80FD;&#x4F4E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x5EA6;&#xFF08;&#x4F9D;&#x8D56;&#xFF09;&#xFF0C;&#x540C;&#x65F6;&#x80FD;&#x907F;&#x514D;&#x4E0A;&#x5E1D;&#x7C7B;&#xFF08;&#x4E00;&#x4E2A;&#x7C7B;&#x505A;&#x4E86;&#x6240;&#x6709;&#x7684;&#x4E8B;&#x60C5;&#xFF09;&#x7684;&#x51FA;&#x73B0;&#x3002;</p><p><strong>&#x50F5;&#x5C38;&#x52A0;&#x5165;&#x4F7F;&#x7528;&#x9053;&#x5177;&#x529F;&#x80FD;</strong></p><pre><code class="lang-python"><span class="hljs-comment"># &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x57FA;&#x7C7B;&#x4E0A;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseZombie</span><span class="hljs-params">(object)</span>:</span>
 
-    def pick_props(self, props):
-        &apos;&apos;&apos;
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pick_props</span><span class="hljs-params">(self, props)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
         &#x62FE;&#x53D6;&#x9053;&#x5177;
-        &apos;&apos;&apos;
+        &apos;&apos;&apos;</span>
         self.props = props
 
-    def use_props(self):
-        &apos;&apos;&apos;
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">use_props</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
         &#x4F7F;&#x7528;&#x9053;&#x5177;
-        &apos;&apos;&apos;
-        print &apos;use props
+        &apos;&apos;&apos;</span>
+        <span class="hljs-keyword">print</span> <span class="hljs-string">&apos;use props&apos;</span>
 
-# &#x7EC4;&#x5408;&#x65B9;&#x6CD5;
-# &#x5B9A;&#x4E49;&#x9053;&#x5177;&#x7C7B;
-class Props(object):
+<span class="hljs-comment"># &#x7EC4;&#x5408;&#x65B9;&#x6CD5;</span>
+<span class="hljs-comment"># &#x5B9A;&#x4E49;&#x9053;&#x5177;&#x7C7B;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Props</span><span class="hljs-params">(object)</span>:</span>
 
-     def pick_props(self, props):
-        &apos;&apos;&apos;
+     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pick_props</span><span class="hljs-params">(self, props)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
         &#x62FE;&#x53D6;&#x9053;&#x5177;
-        &apos;&apos;&apos;
+        &apos;&apos;&apos;</span>
         self.props = props
 
-     def use_props(self):
-        &apos;&apos;&apos;
+     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">use_props</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
         &#x4F7F;&#x7528;&#x9053;&#x5177;
-        &apos;&apos;&apos;
-        print &apos;use props
+        &apos;&apos;&apos;</span>
+        <span class="hljs-keyword">print</span> <span class="hljs-string">&apos;use props&apos;</span>
 
-class BaseZombie(object):
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseZombie</span><span class="hljs-params">(object)</span>:</span>
 
-    def init(self, health, move_speed)
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">init</span><span class="hljs-params">(self, health, move_speed)</span>:</span>
         self.health = health
         self.move_speed = move_speed
-        # &#x6DFB;&#x52A0;&#x9053;&#x5177;&#x65B9;&#x6CD5;
+        <span class="hljs-comment"># &#x6DFB;&#x52A0;&#x9053;&#x5177;&#x65B9;&#x6CD5;</span>
         self.props = Props()</code></pre>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x4F7F;&#x7528;&#x7EC4;&#x5408;&#x7684;&#x597D;&#x5904;&#x662F;&#x5C06;&#x7C7B;&#x7684;&#x804C;&#x8D23;&#x5212;&#x5206;&#x7684;&#x66F4;&#x660E;&#x786E;&#x66F4;&#x7075;&#x6D3B;&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x4FEE;&#x6539;&#x9053;&#x5177;&#x7684;&#x9700;&#x6C42;&#x4E5F;&#x4E0D;&#x7528;&#x52A8;&#x50F5;&#x5C38;&#x7C7B;&#x3002;</p><p>&#x9AD8;&#x5185;&#x805A;&#xFF0C;&#x4F4E;&#x8026;&#x5408;&#x548C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x8BF4;&#x7684;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x53EA;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#x662F;&#x4E00;&#x4E2A;&#x9053;&#x7406;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x505A;&#x5230;&#x4E00;&#x4E2A;&#x7C7B;&#x53EA;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#xFF0C;&#x5E76;&#x4E14;&#x628A;&#x8FD9;&#x4EF6;&#x4E8B;&#x505A;&#x597D;&#xFF0C;&#x51CF;&#x5C11;&#x5BF9;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x7684;&#x4F9D;&#x8D56;&#x3002;</p><h3 id="python-&#x4F7F;&#x7528;-oop-&#x7684;&#x573A;&#x666F;">Python &#x4F7F;&#x7528; OOP &#x7684;&#x573A;&#x666F;</h3><ol><li>&#x4F7F;&#x7528; OOP &#x7EC4;&#x7EC7;&#x4EE3;&#x7801;&#x6BD4;&#x7528;&#x51FD;&#x6570;&#x7EC4;&#x7EC7;&#x4EE3;&#x7801;&#x7684;&#x66F4;&#x6E05;&#x6670;&#x3002;
 </li>
@@ -828,7 +828,7 @@ class BaseZombie(object):
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"面向对象编程","level":"2.2.8","depth":2,"next":{"title":"Pythonic","level":"2.3","depth":1,"ref":"","articles":[{"title":"装饰器","level":"2.3.1","depth":2,"path":"chapter-3/decorater.md","ref":"chapter-3/decorater.md","articles":[]},{"title":"切片、列表解析","level":"2.3.2","depth":2,"path":"chapter-3/list_comprehension.md","ref":"chapter-3/list_comprehension.md","articles":[]},{"title":"迭代器、生成器","level":"2.3.3","depth":2,"anchor":"#","path":".","ref":"#","articles":[]},{"title":"函数式编程","level":"2.3.4","depth":2,"path":"chapter-3/fp.md","ref":"chapter-3/fp.md","articles":[]},{"title":"继承顺序和super","level":"2.3.5","depth":2,"anchor":"#","path":".","ref":"#","articles":[]},{"title":"Mixin","level":"2.3.6","depth":2,"path":"chapter-3/mixin.md","ref":"chapter-3/mixin.md","articles":[]},{"title":"常用内建函数","level":"2.3.7","depth":2,"anchor":"#","path":".","ref":"#","articles":[]}]},"previous":{"title":"Bug 和 Debug","level":"2.2.7","depth":2,"path":"chapter-2/debug.md","ref":"chapter-2/debug.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","fancybox","katex","nocache","pyshell"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"nocache":{},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/runforever/py4g/issues"},"pyshell":{"apiHost":"http://pyshell.defcoding.com"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"如何教妹子学Python","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter-2/oop.md","mtime":"2016-10-31T03:19:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-12-05T10:33:06.918Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"面向对象编程","level":"2.2.8","depth":2,"next":{"title":"Pythonic","level":"2.3","depth":1,"ref":"","articles":[{"title":"装饰器","level":"2.3.1","depth":2,"path":"chapter-3/decorater.md","ref":"chapter-3/decorater.md","articles":[]},{"title":"切片、列表解析","level":"2.3.2","depth":2,"path":"chapter-3/list_comprehension.md","ref":"chapter-3/list_comprehension.md","articles":[]},{"title":"迭代器、生成器","level":"2.3.3","depth":2,"anchor":"#","path":".","ref":"#","articles":[]},{"title":"函数式编程","level":"2.3.4","depth":2,"path":"chapter-3/fp.md","ref":"chapter-3/fp.md","articles":[]},{"title":"继承顺序和super","level":"2.3.5","depth":2,"anchor":"#","path":".","ref":"#","articles":[]},{"title":"Mixin","level":"2.3.6","depth":2,"path":"chapter-3/mixin.md","ref":"chapter-3/mixin.md","articles":[]},{"title":"常用内建函数","level":"2.3.7","depth":2,"anchor":"#","path":".","ref":"#","articles":[]}]},"previous":{"title":"Bug 和 Debug","level":"2.2.7","depth":2,"path":"chapter-2/debug.md","ref":"chapter-2/debug.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","fancybox","katex","nocache","pyshell"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"nocache":{},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/runforever/py4g/issues"},"pyshell":{"apiHost":"http://pyshell.defcoding.com"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"如何教妹子学Python","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter-2/oop.md","mtime":"2016-12-05T11:29:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-12-05T11:31:04.333Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
