@@ -29,7 +29,7 @@
     * [切片、列表解析](chapter-3/list_comprehension.md)
     * [迭代器、生成器](#)
     * [函数式编程](chapter-3/fp.md)
-    * [继承顺序和 super](chapter-3/mro.md)
+    * [MRO 和 super](chapter-3/mro.md)
     * [Mixin](chapter-3/mixin.md)
     * [常用内建函数](#)
 
