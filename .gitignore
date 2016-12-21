@@ -18,3 +18,4 @@ _book
 .deploy_book
 *.pyc
 test*
+.#*

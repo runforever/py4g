@@ -1,6 +1,6 @@
 # Summary
 
-### 序
+### 前言
 
 * [简介](README.md)
 * [为什么要写这本书](introductory/why.md)
@@ -27,7 +27,7 @@
 * Pythonic
     * [装饰器](chapter-3/decorater.md)
     * [切片、列表解析](chapter-3/list_comprehension.md)
-    * [迭代器、生成器](#)
+    * [生成器、迭代器](chapter-3/generator.md)
     * [函数式编程](chapter-3/fp.md)
     * [MRO 和 super](chapter-3/mro.md)
     * [Mixin](chapter-3/mixin.md)
