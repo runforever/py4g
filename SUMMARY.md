@@ -25,13 +25,13 @@
     * [面向对象编程](chapter-2/oop.md)
 
 * Pythonic
+    * [常用内建函数](chapter-3/build_in_func.md)
     * [装饰器](chapter-3/decorater.md)
     * [切片、列表解析](chapter-3/list_comprehension.md)
     * [生成器、迭代器](chapter-3/generator.md)
     * [函数式编程](chapter-3/fp.md)
     * [MRO 和 super](chapter-3/mro.md)
     * [Mixin](chapter-3/mixin.md)
-    * [常用内建函数](#)
 
 * 工程化
     * [异常处理](#)
