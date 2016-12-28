@@ -38,10 +38,8 @@
     * [单元测试](#)
     * [常用库](#)
 
-* 开始做项目
-    * [first project](#)
-    * [管理你的源代码](#)
-    * [second project](#)
+* 小项目
+    * [如何开始](chapter-5/before_the_project.md)
 
 * 结束
     * [新的开始](#)
