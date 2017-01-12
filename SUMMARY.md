@@ -34,7 +34,7 @@
     * [Mixin](chapter-3/mixin.md)
 
 * 工程化
-    * [异常处理](#)
+    * [异常处理](chapter-4/exception.md)
     * [单元测试](#)
     * [常用库](#)
 
