@@ -1,0 +1,915 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>异常处理 · 如何教妹子学Python</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pyshell/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href=".." />
+    
+    
+
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">前言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introductory/why.html">
+            
+                <a href="../introductory/why.html">
+            
+                    
+                    为什么要写这本书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../introductory/about.html">
+            
+                <a href="../introductory/about.html">
+            
+                    
+                    关于我
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../introductory/warning.html">
+            
+                <a href="../introductory/warning.html">
+            
+                    
+                    重要说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapter-1/attitude.html">
+            
+                <a href="../chapter-1/attitude.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapter-1/charm.html">
+            
+                <a href="../chapter-1/charm.html">
+            
+                    
+                    Python 语言的魅力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapter-1/Python2or3.html">
+            
+                <a href="../chapter-1/Python2or3.html">
+            
+                    
+                    Python2 or Python3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapter-2/basic_type.html">
+            
+                <a href="../chapter-2/basic_type.html">
+            
+                    
+                    基本数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapter-2/variables.html">
+            
+                <a href="../chapter-2/variables.html">
+            
+                    
+                    列表、变量、流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapter-2/tuple_dict.html">
+            
+                <a href="../chapter-2/tuple_dict.html">
+            
+                    
+                    元组、字典、集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter-2/dev_tool.html">
+            
+                <a href="../chapter-2/dev_tool.html">
+            
+                    
+                    聊聊开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../chapter-2/function.html">
+            
+                <a href="../chapter-2/function.html">
+            
+                    
+                    函数、脚本文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../chapter-2/module.html">
+            
+                <a href="../chapter-2/module.html">
+            
+                    
+                    模块、包、设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../chapter-2/debug.html">
+            
+                <a href="../chapter-2/debug.html">
+            
+                    
+                    Bug 和 Debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../chapter-2/oop.html">
+            
+                <a href="../chapter-2/oop.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    Pythonic
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../chapter-3/build_in_func.html">
+            
+                <a href="../chapter-3/build_in_func.html">
+            
+                    
+                    常用内建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../chapter-3/decorater.html">
+            
+                <a href="../chapter-3/decorater.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../chapter-3/list_comprehension.html">
+            
+                <a href="../chapter-3/list_comprehension.html">
+            
+                    
+                    切片、列表解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../chapter-3/generator.html">
+            
+                <a href="../chapter-3/generator.html">
+            
+                    
+                    生成器、迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../chapter-3/fp.html">
+            
+                <a href="../chapter-3/fp.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../chapter-3/mro.html">
+            
+                <a href="../chapter-3/mro.html">
+            
+                    
+                    MRO 和 super
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../chapter-3/mixin.html">
+            
+                <a href="../chapter-3/mixin.html">
+            
+                    
+                    Mixin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    工程化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.4.1" data-path="exception.html">
+            
+                <a href="exception.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="..">
+            
+                <span>
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="..">
+            
+                <span>
+            
+                    
+                    常用库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" >
+            
+                <span>
+            
+                    
+                    小项目
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../chapter-5/before_the_project.html">
+            
+                <a href="../chapter-5/before_the_project.html">
+            
+                    
+                    如何开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+                <span>
+            
+                    
+                    结束
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="..">
+            
+                <span>
+            
+                    
+                    新的开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >异常处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x5F02;&#x5E38;&#x5904;&#x7406;</h1><blockquote><p>&#x6C38;&#x8FDC;&#x8981;&#x8FD9;&#x6837;&#x5199;&#x4EE3;&#x7801;&#xFF0C;&#x597D;&#x50CF;&#x6700;&#x7EC8;&#x7EF4;&#x62A4;&#x4F60;&#x4EE3;&#x7801;&#x7684;&#x4EBA;&#x662F;&#x4E2A;&#x72C2;&#x66B4;&#x7684;&#x3001;&#x77E5;&#x9053;&#x4F60;&#x4F4F;&#x5728;&#x54EA;&#x91CC;&#x7684;&#x7CBE;&#x795E;&#x75C5;&#x60A3;&#x8005; -- Martin Golding</p></blockquote><h3 id="&#x4EC0;&#x4E48;&#x662F;&#x5F02;&#x5E38;">&#x4EC0;&#x4E48;&#x662F;&#x5F02;&#x5E38;</h3><p>&#x5728;&#x7F16;&#x7A0B;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x6211;&#x4EEC;&#x591A;&#x591A;&#x5C11;&#x5C11;&#x4F1A;&#x9047;&#x5230; <code>SyntaxError: invalid syntax</code>&#xFF08;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#xFF09;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x628A;&#x4EE3;&#x7801;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x5199;&#x9519;&#x4E86;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p><p>     <a href="http://cdn.defcoding.com/32FE9F73-3742-4941-92E8-E8DA576D6F10.png" title="syntax error" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/32FE9F73-3742-4941-92E8-E8DA576D6F10.png" alt="syntax error">
+     </a></p><p>&#x800C;&#x5F02;&#x5E38;&#x901A;&#x5E38;&#x662F;&#x4EE3;&#x7801;&#x7684;&#x8BED;&#x6CD5;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x5728;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x7684;&#x8F93;&#x5165;&#x4E0B;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x7684;&#x5D29;&#x6E83;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p><p>     <a href="http://cdn.defcoding.com/F969CBB2-C742-45EE-BDBC-10D919FA868F.png" title="exception" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/F969CBB2-C742-45EE-BDBC-10D919FA868F.png" alt="exception">
+     </a></p><p><code>int</code> &#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x6574;&#x578B;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>int(&apos;1&apos;)</code>&#x3001;<code>int(&apos;2&apos;)</code>&#x3001;<code>int(&apos;1010&apos;)</code> &#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x4E3A; <code>1</code>&#x3001;<code>2</code>&#x3001;<code>1010</code>&#xFF0C;&#x800C;&#x4F20;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x80FD;&#x8F6C;&#x6362;&#x6210;&#x6574;&#x6570;&#xFF0C;<code>int</code> &#x51FD;&#x6570;&#x5C31;&#x4F1A;&#x629B;&#x51FA; <code>ValueError</code> &#x5F02;&#x5E38;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x5F02;&#x5E38;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x5C31;&#x4F1A;&#x5728;&#x5F02;&#x5E38;&#x629B;&#x51FA;&#x7684;&#x5730;&#x65B9;&#x4E2D;&#x6B62;&#x3002;</p><p>&#x5F53;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x5904;&#x7406;&#x4E86;&#x8FD9;&#x4E9B;&#x5F02;&#x5E38;&#xFF0C;&#x624D;&#x80FD;&#x8BA9;&#x7A0B;&#x5E8F;&#x9047;&#x5230;&#x5F02;&#x5E38;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x80FD;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x4E0B;&#x53BB;&#x800C;&#x4E0D;&#x662F;&#x5D29;&#x6E83;&#x3002;</p><h3 id="&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x5F02;&#x5E38;&#x5904;&#x7406;</h3><p>Python &#x5904;&#x7406;&#x5F02;&#x5E38;&#x7684;&#x8BED;&#x6CD5;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x79CD;&#x3002;</p><ol><li><code>try...except...</code> &#x683C;&#x5F0F;&#x3002;
+</li>
+<li><code>try...except...else...</code> &#x683C;&#x5F0F;&#x3002;
+</li>
+<li><code>try...except...finally...</code> &#x683C;&#x5F0F;&#x3002;
+</li></ol>
+<p><strong>&#x95EE;&#x9898;</strong>&#xFF1A;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4F5C;&#x7528;&#x662F;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x5316;&#x6210;&#x6574;&#x578B;&#x3002;</p><p><strong>&#x9700;&#x6C42;&#x5206;&#x6790;</strong>&#xFF1A;</p><ol><li><code>int</code> &#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x5B57;&#x8F6C;&#x5316;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x3002;
+</li>
+<li>&#x9700;&#x8981;&#x5904;&#x7406;&#x4E0D;&#x80FD;&#x8F6C;&#x5316;&#x6210;&#x6574;&#x578B;&#x7684;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F02;&#x5E38; <code>ValueError</code>&#x3002;
+</li>
+<li>&#x9700;&#x8981;&#x5904;&#x7406;&#x53C2;&#x6570;&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x8005;&#x6574;&#x578B;&#x7684;&#x5F02;&#x5E38; <code>TypeError</code>&#x3002;
+</li>
+<li>&#x9047;&#x5230;&#x5F02;&#x5E38;&#x65F6;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F; <code>0</code>&#x3002;
+</li></ol>
+<p>&#x5982;&#x679C;&#x8F93;&#x5165;&#x4E0D;&#x5408;&#x6CD5; <code>int</code> &#x51FD;&#x6570;&#x629B;&#x51FA;&#x76F8;&#x5E94;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x5982;&#x56FE;&#xFF1A;</p><p>     <a href="http://cdn.defcoding.com/DC387C04-4E46-4A91-9EAD-ACB6F7DC684C.png" title="int_exception" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/DC387C04-4E46-4A91-9EAD-ACB6F7DC684C.png" alt="int_exception">
+     </a></p><p><strong>&#x5B9E;&#x73B0;</strong>&#xFF1A;</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_int</span><span class="hljs-params">(string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        result = int(string)
+    <span class="hljs-keyword">except</span> (ValueError, TypeError):
+        result = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">return</span> result
+
+
+<span class="hljs-keyword">print</span> get_int(<span class="hljs-string">&apos;101&apos;</span>)
+<span class="hljs-comment"># result 101</span>
+
+<span class="hljs-keyword">print</span> get_int(<span class="hljs-string">&apos;10&apos;</span>)
+<span class="hljs-comment"># result 10</span>
+
+<span class="hljs-keyword">print</span> get_int(<span class="hljs-string">&apos;hello&apos;</span>)
+<span class="hljs-comment"># result 0</span>
+
+<span class="hljs-keyword">print</span> get_int(<span class="hljs-keyword">None</span>)
+<span class="hljs-comment"># result 0</span></code></pre>
+<p>&#x4EE3;&#x7801;&#x4E2D;&#x6211;&#x4EEC;&#x5C06;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#x7684;&#x4EE3;&#x7801; <code>result = int(string)</code> &#x653E;&#x5230; <code>try...except</code> &#x4E2D;&#xFF0C;&#x4F7F;&#x7528; <code>except</code> &#x6765;&#x6355;&#x83B7;&#x591A;&#x4E2A;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x540E;&#x5C06; <code>result</code> &#x7684;&#x503C;&#x7F6E;&#x4E3A; <code>0</code>&#x3002;</p><p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x77E5;&#x9053;&#x5177;&#x4F53;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#x5F02;&#x5E38;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C06;&#x5F02;&#x5E38;&#x6253;&#x5370;&#x51FA;&#x6765;&#x3002;</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_int</span><span class="hljs-params">(string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        result = int(string)
+    <span class="hljs-keyword">except</span> (ValueError, TypeError) <span class="hljs-keyword">as</span> e:
+        <span class="hljs-keyword">print</span> e
+        result = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">return</span> result
+
+<span class="hljs-keyword">print</span> get_int(<span class="hljs-string">&apos;hello&apos;</span>)
+<span class="hljs-comment"># invalid literal for int() with base 10: &apos;hello&apos;</span>
+<span class="hljs-comment"># result 0</span>
+
+<span class="hljs-keyword">print</span> get_int(<span class="hljs-keyword">None</span>)
+<span class="hljs-comment"># int() argument must be a string or a number, not &apos;NoneType&apos;</span>
+<span class="hljs-comment"># result 0</span></code></pre>
+<p>&#x4EE3;&#x7801;&#x4E2D;&#x662F;&#x7528; <code>as</code> &#x8BED;&#x53E5;&#x5C06;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF; <code>e</code>&#xFF0C;&#x7136;&#x540E;&#x662F;&#x7528; <code>print e</code> &#x5C06;&#x5177;&#x4F53;&#x5F02;&#x5E38;&#x6253;&#x5370;&#x51FA;&#x6765;&#x3002;</p><p>&#x9664;&#x4E86;&#x540C;&#x65F6;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x5F02;&#x5E38;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x5355;&#x72EC;&#x5904;&#x7406;&#x6BCF;&#x4E2A;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x5F02;&#x5E38;&#x3002;</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_int</span><span class="hljs-params">(string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        result = int(string)
+    <span class="hljs-keyword">except</span> ValueError:
+        result = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">except</span> TypeError:
+        result = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">return</span> result</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x9047;&#x5230;&#x5F02;&#x5E38;&#x540E;&#x8FD4;&#x56DE;&#x4EC0;&#x4E48;&#x7ED3;&#x679C;&#x6211;&#x4EEC;&#x8981;&#x6839;&#x636E;&#x5177;&#x4F53;&#x5177;&#x4F53;&#x7684;&#x4E1A;&#x52A1;&#x6765;&#x5B9A;&#xFF0C;&#x5F53;&#x524D;&#x5904;&#x7406;&#x5F02;&#x5E38;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x8FD4;&#x56DE; <code>0</code>&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5904;&#x7406;&#x5F02;&#x5E38;&#x3002;</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_int</span><span class="hljs-params">(string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        result = int(string)
+        has_exception = <span class="hljs-keyword">False</span>
+    <span class="hljs-keyword">except</span> (ValueError, TypeError):
+        result = <span class="hljs-number">0</span>
+        has_exception = <span class="hljs-keyword">True</span>
+    <span class="hljs-keyword">return</span> has_exception, result
+
+
+has_exception, result = get_int(<span class="hljs-string">&apos;exception&apos;</span>)
+<span class="hljs-keyword">if</span> has_exception:
+    <span class="hljs-keyword">print</span> <span class="hljs-string">&apos;oops! exception&apos;</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">print</span> value</code></pre>
+<p><code>get_int</code> &#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x5F02;&#x5E38;&#x72B6;&#x6001; <code>has_exception</code> &#x548C;&#x8F6C;&#x6362;&#x7684;&#x503C; <code>result</code>&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#x5C31;&#x4EA4;&#x7ED9;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8005;&#x53BB;&#x5B8C;&#x6210;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;&#x903B;&#x8F91;&#x3002;</p><p>&#x4E00;&#x4E9B;&#x521D;&#x5B66;&#x8005;&#x7ECF;&#x5E38;&#x6EE5;&#x7528;&#x5F02;&#x5E38;&#x5904;&#x7406;&#xFF0C;&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x4E00;&#x4E9B;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x7684;&#x539F;&#x5219;&#x3002;</p><p><strong>&#x539F;&#x5219; 1</strong>&#xFF1A;<code>except</code> &#x8981;&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6355;&#x83B7;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x3002;</p><p>&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x793A;&#x8303;</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_int</span><span class="hljs-params">(string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        result = int(string)
+    <span class="hljs-keyword">except</span>:
+        result = <span class="hljs-number">0</span>
+   <span class="hljs-keyword">return</span> result</code></pre>
+<p><code>TypeError</code> &#x548C; <code>ValueError</code> &#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x9884;&#x77E5;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x800C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4F1A;&#x6355;&#x83B7;&#x6240;&#x6709;&#x5F02;&#x5E38;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x9690;&#x85CF;&#x6F5C;&#x5728;&#x7684; <code>bug</code>&#xFF0C;&#x5F53;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8BA9;&#x6211;&#x4EEC;&#x5C31;&#x5F88;&#x96BE;&#x4EE5;&#x627E;&#x5230;&#x95EE;&#x9898;&#x7684;&#x75C7;&#x7ED3;&#x3002;</p><p><strong>&#x539F;&#x5219; 2</strong>&#xFF1A;&#x53EA;&#x5728;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x7684;&#x4EE3;&#x7801;&#x4E0A;&#x4F7F;&#x7528; <code>try...except...</code>&#x3002;</p><p><code>get_int</code> &#x51FD;&#x6570;&#x4E2D;&#x7684; <code>try...except</code> &#x53EA;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x884C;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x7684;&#x4EE3;&#x7801; <code>result = int(string)</code>&#xFF0C;&#x8FD9;&#x6837;&#x6709;&#x52A9;&#x4E8E;&#x6211;&#x4EEC;&#x660E;&#x786E;&#x5B9A;&#x4F4D;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684; <code>try...except</code> &#x4E2D;&#x5305;&#x542B;&#x4E86;&#x5176;&#x4ED6;&#x4EE3;&#x7801;&#xFF0C;&#x5F53;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x7684;&#x65F6;&#x5019;&#x4F60;&#x5C31;&#x5F97;&#x8003;&#x8651;&#x5230;&#x5E95;&#x662F;&#x54EA;&#x884C;&#x4EE3;&#x7801;&#x51FA;&#x5F02;&#x5E38;&#x4E86;&#x3002;</p><p><strong>&#x539F;&#x5219; 3</strong>&#xFF1A;&#x660E;&#x786E;&#x77E5;&#x9053;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x7684;&#x65F6;&#x5019;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x4EC0;&#x4E48;&#x6837;&#x5904;&#x7406;&#x7684;&#x7ED3;&#x679C;&#x3002;</p><p><strong>&#x539F;&#x5219; 4</strong>&#xFF1A;&#x5982;&#x679C;&#x4F7F;&#x7528; <code>if</code> &#x6761;&#x4EF6;&#x5224;&#x65AD;&#x53EF;&#x4EE5;&#x66FF;&#x4EE3;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x7684;&#x8BDD;&#x5C31;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x3002;</p><p>Python &#x5F02;&#x5E38;&#x5904;&#x7406;&#x8FD8;&#x6709;&#x65B9;&#x5F0F; <code>try...except...else</code> &#x548C; <code>try...except...finally</code>&#xFF0C;&#x4E0B;&#x9762;&#x4E3B;&#x8981;&#x8BB2;&#x4ED6;&#x4EEC;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x9700;&#x8981;&#x89C6;&#x5177;&#x4F53;&#x95EE;&#x9898;&#x800C;&#x5B9A;&#xFF0C;&#x5173;&#x4E8E;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x8BFB;&#x8005;&#x8981;&#x638C;&#x63E1;&#x7684;&#x662F;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x7684;&#x601D;&#x60F3;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x7684;&#x7528;&#x6CD5;&#x3002;</p><h4 id="tryexceptelse">try...except...else...</h4><p><code>else</code> &#x5206;&#x652F;&#x5728;&#x6CA1;&#x6709;&#x89E6;&#x53D1;&#x5F02;&#x5E38;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_int</span><span class="hljs-params">(string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        result = int(string)
+    <span class="hljs-keyword">except</span> (ValueError, TypeError):
+        result = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">print</span> <span class="hljs-string">&apos;oops! exception&apos;</span>
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">print</span> <span class="hljs-string">&apos;no exception&apos;</span>
+    <span class="hljs-keyword">return</span> result
+
+<span class="hljs-comment"># &#x65E0;&#x5F02;&#x5E38;&#xFF0C;&#x6267;&#x884C; else &#x5206;&#x652F;</span>
+<span class="hljs-keyword">print</span> get_int(<span class="hljs-string">&apos;23&apos;</span>)
+<span class="hljs-comment"># no exception</span>
+<span class="hljs-comment"># 23</span>
+
+<span class="hljs-comment"># &#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF0C;&#x4E0D;&#x6267;&#x884C; else &#x5206;&#x652F;</span>
+<span class="hljs-keyword">print</span> get_int(<span class="hljs-string">&apos;exception&apos;</span>)
+<span class="hljs-comment"># oops! exception</span>
+<span class="hljs-comment"># 0</span></code></pre>
+<h4 id="tryexceptfinally">try...except...finally...</h4><p><code>finally</code> &#x5206;&#x652F;&#x662F;&#x65E0;&#x8BBA;&#x662F;&#x5426;&#x53D1;&#x73B0;&#x5F02;&#x5E38;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#x91CC;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x9002;&#x5408;&#x7528;&#x5728;&#x9700;&#x8981;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x7684;&#x573A;&#x666F;&#xFF08;&#x6253;&#x5F00;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#xFF0C;&#x6253;&#x5F00;&#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#xFF09;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x95EE;&#x9898;&#xFF1A;</p><p><code>number.txt</code> &#x6587;&#x4EF6;&#x4E2D;&#x6709;&#x5982;&#x4E0B;&#x5185;&#x5BB9;</p><pre><code>1
+2
+3
+s
+88</code></pre>
+<p>&#x8BF7;&#x5C06;&#x6BCF;&#x884C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x6570;&#x5B57;&#xFF0C;&#x4E0D;&#x80FD;&#x8F6C;&#x5316;&#x4E3A;&#x6570;&#x5B57;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8FD4;&#x56DE; <code>0</code>&#xFF0C;&#x5C06;&#x8F6C;&#x6362;&#x7684;&#x7ED3;&#x679C;&#x653E;&#x5230; <code>list</code> &#x4E2D;&#x8FD4;&#x56DE;&#x3002;</p><p><strong>&#x9700;&#x6C42;&#x5206;&#x6790;</strong>&#xFF1A;</p><ol><li>&#x4F7F;&#x7528; <code>open</code> &#x65B9;&#x6CD5;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528; <code>close</code> &#x65B9;&#x6CD5;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x3002;
+</li>
+<li>&#x9700;&#x8981;&#x5904;&#x7406;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x65F6; <code>open</code> &#x51FD;&#x6570;&#x629B;&#x51FA; <code>IOError</code> &#x5F02;&#x5E38;&#x3002;
+</li>
+<li>&#x4F7F;&#x7528;&#x4E0A;&#x9762;&#x7684; <code>get_int</code> &#x51FD;&#x6570;&#x5904;&#x7406;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6570;&#x5B57;&#x3002;
+</li></ol>
+<p><strong>&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</strong>&#xFF1A;</p><pre><code class="lang-python"><span class="hljs-comment"># coding: utf-8</span>
+
+<span class="hljs-keyword">import</span> os
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_int</span><span class="hljs-params">(string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        result = int(string)
+    <span class="hljs-keyword">except</span> (ValueError, TypeError):
+        result = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">return</span> result
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    filename = <span class="hljs-string">&apos;number.txt&apos;</span>
+
+    <span class="hljs-comment"># os.path.exists &#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x5224;&#x65AD;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+    <span class="hljs-comment"># &#x6B64;&#x5904;&#x4F7F;&#x7528;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x66FF;&#x4EE3;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x7684; IOError &#x5F02;&#x5E38;&#x5904;&#x7406;</span>
+    <span class="hljs-keyword">if</span> os.path.exists(filename):
+        file = open(filename)
+        <span class="hljs-keyword">try</span>:
+            numbers = [get_int(line) <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> file.readlines()]
+        <span class="hljs-keyword">finally</span>:
+            file.close()
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">print</span> <span class="hljs-string">&apos;%s does not exist&apos;</span> % filename
+        numbers = []
+    <span class="hljs-keyword">return</span> numbers
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    <span class="hljs-keyword">print</span> main()</code></pre>
+<ol><li><code>os.path.exists</code> &#x4F7F;&#x7528;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x6765;&#x66FF;&#x4EE3;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x3002;
+</li>
+<li><code>finally</code> &#x5206;&#x652F;&#x65E0;&#x8BBA;&#x662F;&#x5426;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#x90FD;&#x4F1A;&#x5173;&#x95ED;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x3002;
+</li>
+<li><code>try</code> &#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x6CA1;&#x6709;&#x4F7F;&#x7528; <code>except</code> &#x662F;&#x56E0;&#x4E3A;&#x6211;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x77E5;&#x9053;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#x5F02;&#x5E38;&#x3002;
+</li></ol>
+<p>&#x5173;&#x4E8E;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x6709;&#x4E2A; <code>Pythonic</code> &#x7684;&#x505A;&#x6CD5;&#x662F;&#x4F7F;&#x7528; <code>with</code> &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x4E3A;&#xFF1A;</p><pre><code class="lang-python"><span class="hljs-comment"># coding: utf-8</span>
+
+<span class="hljs-keyword">import</span> os
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_int</span><span class="hljs-params">(string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        result = int(string)
+    <span class="hljs-keyword">except</span> (ValueError, TypeError):
+        result = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">return</span> result
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    filename = <span class="hljs-string">&apos;number.txt&apos;</span>
+
+    <span class="hljs-comment"># os.path.exists &#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x5224;&#x65AD;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+    <span class="hljs-comment"># &#x6B64;&#x5904;&#x4F7F;&#x7528;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x66FF;&#x4EE3;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x7684; IOError &#x5F02;&#x5E38;&#x5904;&#x7406;</span>
+    <span class="hljs-keyword">if</span> os.path.exists(filename):
+        <span class="hljs-keyword">with</span> open(filename) <span class="hljs-keyword">as</span> file:
+            numbers = [get_int(line) <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> file.readlines()]
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">print</span> <span class="hljs-string">&apos;%s does not exist&apos;</span> % filename
+        numbers = []
+    <span class="hljs-keyword">return</span> numbers
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    <span class="hljs-keyword">print</span> main()</code></pre>
+<p><code>with</code> &#x4EE3;&#x7801;&#x5757;&#x7ED3;&#x675F;&#x540E;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528; <code>file.close()</code> &#x65B9;&#x6CD5;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#xFF0C;&#x5173;&#x4E8E; <code>with</code> &#x5173;&#x952E;&#x5B57;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x67E5;&#x9605;&#x76F8;&#x5173;&#x8D44;&#x6599;&#xFF0C;&#x5728;&#x4E00;&#x4E9B;&#x9700;&#x8981;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x7684;&#x573A;&#x666F;&#x90FD;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528; <code>with</code> &#x6A21;&#x5F0F;&#x6765;&#x89E3;&#x51B3;&#x3002;</p><h3 id="&#x4F5C;&#x4E1A;">&#x4F5C;&#x4E1A;</h3><p>Python &#x4E2D;&#x7684; <code>datetime</code> &#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x65F6;&#x95F4;&#x76F8;&#x5173;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x8F6C;&#x6362;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5B57;&#x7B26;&#x4E32; <code>2017-01-01</code>&#x3001;<code>2017-01-01 08:08</code>&#x3001;<code>2017/01/01</code> &#x8F6C;&#x6362;&#x4E3A; <code>datetime</code> &#x5BF9;&#x8C61;&#x3002;</p><p>&#x63D0;&#x793A;&#xFF1A;&#x641C;&#x7D22; <code>datetime</code> &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x65F6;&#x95F4;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p><h3 id="raise-&#x5173;&#x952E;&#x5B57;">raise &#x5173;&#x952E;&#x5B57;</h3><p>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>raise</code> &#x5173;&#x952E;&#x5B57;&#x89E6;&#x53D1;&#x5F02;&#x5E38;&#x8BA9;&#x7A0B;&#x5E8F;&#x63D0;&#x65E9;&#x7ED3;&#x675F;&#xFF0C;&#x8BA9;&#x8C03;&#x7528;&#x8005;&#x53BB;&#x89E3;&#x51B3;&#x5F02;&#x5E38;&#x3002;</p><p>&#x4F8B;&#x5982;&#xFF1A;<code>int</code> &#x51FD;&#x6570;&#x4E2D;&#x63A5;&#x6536;&#x5230;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x5C31;&#x4F1A; <code>raise</code> &#x51FA;&#x76F8;&#x5E94;&#x7684;&#x5F02;&#x5E38;&#x3002;</p><p>&#x4F7F;&#x7528;&#xFF1A;</p><p>     <a href="http://cdn.defcoding.com/917934D6-C228-4C9A-B9E1-F441545BE422.png" title="raise" target="_blank" class="fancybox">
+       <img src="http://cdn.defcoding.com/917934D6-C228-4C9A-B9E1-F441545BE422.png" alt="raise">
+     </a></p><h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3><p>&#x7F16;&#x7A0B;&#x8FC7;&#x7A0B;&#x4E2D;&#x6211;&#x4EEC;&#x8981;&#x5177;&#x6709;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x7684;&#x610F;&#x8BC6;&#xFF0C;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x7684;&#x540C;&#x65F6;&#x8003;&#x8651;&#x4EE3;&#x7801;&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x54EA;&#x4E9B;&#x5F02;&#x5E38;&#xFF0C;&#x53EA;&#x6709;&#x5168;&#x5C40;&#x7684;&#x53BB;&#x601D;&#x8003;&#x624D;&#x80FD;&#x8BA9;&#x6211;&#x4EEC;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x66F4;&#x5065;&#x58EE;&#x3002;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="..#" class="navigation navigation-next navigation-unique" aria-label="Next page: 单元测试">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"异常处理","level":"2.4.1","depth":2,"next":{"title":"单元测试","level":"2.4.2","depth":2,"anchor":"#","path":".","ref":"#","articles":[]},"previous":{"title":"工程化","level":"2.4","depth":1,"ref":"","articles":[{"title":"异常处理","level":"2.4.1","depth":2,"path":"chapter-4/exception.md","ref":"chapter-4/exception.md","articles":[]},{"title":"单元测试","level":"2.4.2","depth":2,"anchor":"#","path":".","ref":"#","articles":[]},{"title":"常用库","level":"2.4.3","depth":2,"anchor":"#","path":".","ref":"#","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github","fancybox","katex","nocache","pyshell"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"nocache":{},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/runforever/py4g/issues"},"pyshell":{"apiHost":"http://pyshell.defcoding.com"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"如何教妹子学Python","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter-4/exception.md","mtime":"2017-01-15T09:00:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-01-15T09:00:33.023Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pyshell/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
