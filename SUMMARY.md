@@ -41,5 +41,5 @@
 * 小项目
     * [如何开始](chapter-5/before_the_project.md)
 
-* 结束
-    * [新的开始](#)
+* 尾声
+    * [结束](chapter-6/new_start.md)
