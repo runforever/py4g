@@ -36,7 +36,7 @@
 * 工程化
     * [异常处理](chapter-4/exception.md)
     * [单元测试](chapter-4/unittest.md)
-    * [常用库](#)
+    * [Python 常用库](chapter-4/lib.md)
 
 * 小项目
     * [如何开始](chapter-5/before_the_project.md)
