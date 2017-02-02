@@ -10,14 +10,14 @@
 ### 开发工具
 
 #### 终端 Terminal
-![终端](http://i1.buimg.com/567571/234cf787cbffd9d2.png)
+![Terminal](http://cdn.defcoding.com/55380159-616D-4F9E-AE13-5BF0459A48E5.png)
 
-程序员经常在这样的窗口里面敲一些莫名其妙的东西，其实没有什么神秘的，这个东西叫做终端(Terminal)，程序员要想跟计算机交流就需要通过终端来发送指令给计算机，程序员在这上面做的事情，一种是他们正在写代码，一种是在发送计算机命令。
+程序员经常在这样的窗口里面敲一些奇怪的字符，其实没有什么神秘的，这个东西叫做终端（Terminal），程序员要想跟计算机交流就需要通过终端来发送指令给计算机，程序员在这上面做的事情，一种是他们正在写代码，一种是在发送计算机命令。
 
 #### Python 解释器
-![Python 解释器](http://i2.buimg.com/567571/b3c82a49ca635a58.png)
+![Python REPL](http://cdn.defcoding.com/97967F7D-074F-41AF-A711-DB15EE51E81E.png)
 
-我们在终端输入 Python 然后 Enter 后，会进入到 Python 的交互解释环境(REPL)，我们需要在这里面运行 Python 代码。
+我们在终端输入 Python 然后 Enter 后，会进入到 Python 的交互解释环境（REPL），在这里面可以运行 Python 代码。
 
 ### 整数、浮点数、运算符号、字符串
 
@@ -78,7 +78,7 @@ Hello
 
 这个问题中，"Hello" 是字符串类型，在python 中是 str 类型
 
-#### 小作业
+#### 作业
 计算 2 的 38 次方，问题来自 [Python Challenge](http://www.pythonchallenge.com/pc/def/0.html)
 
 ### 开始上道了

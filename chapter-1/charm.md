@@ -1,7 +1,7 @@
 # Python 语言的魅力
 
 ### 我为什么学 Python
-上大学的时候学习的是 C 语言和 C++ 语言，编程的时候经常会陷入到语言细节中，而且内存出错也足够让人调试到崩溃，对初学者来说用这两个语言编程实在太痛苦了，其中有一段时间我在学习 Linux，偶然中听说 Python 是一门特别简单而且强大的语言，于是开始学习，之后便像打开了新世界的大门，自己的思路在编程中轻而易举的表现出来，Python 有很多丰富的第三方库，几乎解决了我遇到的任何问题。
+上大学的时候学习的是 C 语言和 C++ 语言，编程的时候经常会陷入到语言细节中，内存出错的 Bug 经常让我调试到崩溃，这两门语言实在不适合用做编程入门，其中有一段时间我对 Linux 系统很感兴趣，在学习 Linux 的过程中偶然接触到了 Python，于是开始学习，之后便像打开了新世界的大门，用 Python 语言很快就能实现自己想做的东西，加上 Python 有丰富的第三方库，几乎解决了我遇到的所有问题，从此便在这条路上越走越远了。
 
 ### Python 的历史
 感兴趣的同学可以去看 [Wiki](https://zh.wikipedia.org/wiki/Python) ，简单的说就是 Python 的作者 Guido van Rossum 很喜欢 Monty Python's Flying Circus 这个喜剧，所以用 Python 来命名他新开发的编程语言。
@@ -10,9 +10,9 @@
 Python 解决问题的方法只有一种，最简单直接的办法。
 
 其他的在 Python Shell 里面使用 import this 查看
-![import this](http://i4.buimg.com/567571/0b77a2644c0e47d0.jpg)
+![this](http://cdn.defcoding.com/75A7C0E7-79BF-448E-8B44-FA5E0B7172AF.png)
 
-[译文版本](https://wiki.python.org/moin/PythonZenChineseTranslate)
+译文版本，[来源](https://wiki.python.org/moin/PythonZenChineseTranslate)
 ```
 优美胜于丑陋，显明胜于隐含。
 简单胜于复杂，复杂胜于繁复。
