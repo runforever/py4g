@@ -8,10 +8,26 @@
 > 10 年成就专家
 
 ### 用好一种编辑器
-编辑器是写代码的必要的工具，用好一种编辑器能让你高效的完成各种编辑任务，写代码，写文档，修改配置，阅读代码，查找关键信息，要达到熟练，你必须掌握这个编辑器的常用快捷键，学会用键盘在代码中移动光标，学会安装插件来扩展编辑器的功能。
+编辑器是写代码的必要的工具，用好一种编辑器能让你高效的完成各种编辑任务，如：
 
-### Atom 编辑器介绍
-Atom 默认配置了代码高亮，代码自动缩进，显示代码行号，支持插件扩展等功能，一个合格的代码编辑器至少需要有这些特点，Atom 对于新手来说很友好，它没有复杂的快捷键而且免费，新手可以开箱即用。
+1. 写代码。
+2. 写文档。
+3. 修改配置。
+4. 阅读代码。
+5. 查找关键信息。
+
+提高编辑器的使用效率也就提高了写代码的效率，下面我们学习如何使用 Atom 编辑器。
+
+### 代码编辑器
+一个合格的代码编辑器至少需要有下面的特点：
+
+1. 代码中的关键字和变量高亮显示。
+2. 代码自动缩进。
+3. 可以显示代码行号，方便查看代码。
+4. 各种编辑任务的快捷键，甚至可以使用快捷键完全替代鼠标操作。
+5. 支持插件扩展，通过插件使编辑器具有自己想要的功能。
+
+Atom 对于新手来说很友好，不需要太多的配置即可使用，而且，Atom 免费，有强大社区支持和丰富的扩展插件。
 
 ### 使用 Atom
 打开 [Atom 官网](https://atom.io)，下载编辑器
@@ -21,9 +37,17 @@ Atom 默认配置了代码高亮，代码自动缩进，显示代码行号，支
 
 解压代码，使用 Atom 打开 `chapter-2/tools/code/atom_code.py` 文件，这是一段风格和语法有问题的代码，使用 Atom 编辑器打开后显示如下：
 ![atom code](http://cdn.defcoding.com/B0DC7360-2AC6-42BB-80C8-D7F0B7E6B47B.png)
-可以看到 Atom 显示了很多有用的信息帮助我们写代码，例如：项目目录结构，代码关键字高亮，语法错误提示，风格错误提示，行号等。
+Atom 显示了：
 
-要让 Atom 有这些功能，我们需要对他进行 Python 编程相关的配置。
+1. 项目目录结构。
+2. 代码关键字高亮。
+3. 语法错误提示。
+4. 风格错误提示
+5. 行号。
+
+这些信息能帮助我们快速的定位代码的问题和查找代码。
+
+要让 Atom 具备这些功能，我们需要对它进行 Python 编程相关的配置。
 
 ### 配置 Atom
 1. 配置代码缩进。
@@ -54,18 +78,18 @@ Atom 默认是没有 Python 代码风格和语法检查功能的，需要我们�
 插件详情：
 ![detail](http://cdn.defcoding.com/BC289D41-D06A-4FB9-B074-D67B7A065925.png)
 
-使用 Terminal 安装，命令 `apm install linter`：
+使用 Terminal 安装，命令：`apm install linter`：
 ![install](http://cdn.defcoding.com/B12D6C12-E7C8-4BDF-B82B-C4A8E8238B7B.png)
 
 Atom 编辑器内安装，打开 Atom 设置，选择 Install（安装）选项，搜索插件并安装：
 ![atom install](http://cdn.defcoding.com/4375A30F-CA44-4CD5-86FD-E1B02188307C.png)
 
-使用 pip 安装 pyflasks 和 pycodestyle，命令 `sudo pip install pyflakes pycodestyle`：
+使用 pip 安装 pyflasks 和 pycodestyle，命令：`sudo pip install pyflakes pycodestyle`：
 ![pycodestyle](http://cdn.defcoding.com/C787DAE4-BB63-4335-80F0-D051FA5B4C14.png)
 
-Atom 的插件需要调用 pyflasks 和 pycodestyle 这两个程序来检查代码语法和风格。
+Atom 的插件需要调用 pyflasks 和 pycodestyle 这两个程序检查代码语法和风格。
 
-安装完成后重启 Atom，插件功能便生效了。
+插件安装完成后重启 Atom，相应的插件功能便生效了。
 
 ### 学习 Atom
 查找资料，深入学习 Atom，资料链接：[learn-atom](https://github.com/nieweidong/learn-atom)。
@@ -73,24 +97,24 @@ Atom 的插件需要调用 pyflasks 和 pycodestyle 这两个程序来检查代�
 目标：
 
 1. 学会常用快捷键，保存，撤销，重做，移动，达到少用鼠标的目的。
-2. 查找常用插件，按需求安装。
-3. 配置一个看起来舒服的主题和字体。
+2. 浏览常用插件，根据自己的需求安装相应的插件。
+3. 给编辑器配置一个自己看起来舒服的主题和字体。
 4. 学习编写插件，提高编辑效率。
 
 ### 编辑器战争
-编辑器种类繁多，用什么编辑器常常成为程序员之间争吵的话题，这些争论是没有任何意义的，没有一种编辑器能完美的胜任各种编辑任务，每种编辑器都有自己的优缺点，用合适的编辑器去解决相应的编辑问题才是最重要的，用好一种编辑器的同时抱着开放的心态去学习其他编辑器，了解他们的优势和缺点。
+编辑器种类繁多，用什么编辑器常常成为程序员之间争吵的话题，这些争论是没有任何意义的，没有一种编辑器能完美的胜任各种编辑任务，每种编辑器都有自己的优缺点，根据问题的需要利用相应的编辑器的优点去高效的去解决问题才是最重要的，用好一种编辑器的同时抱着开放的心态去学习其他编辑器，了解他们的优势和缺点。
 
 > 我觉得 PHP 是世界上最好的语言，但是我主要用 Python
 
-> 我觉得 IDE 是最好的代码编辑工具，但是我主要用 Vim 和 Emacs
+> 我觉得 IDE 是最好的代码编辑工具，但是我主要用 Emacs 和 Vim
 
 ### 我对编辑器的理解
 学会 [Atom](https://atom.io), [Sublime text](https://www.sublimetext.com/3), [Vim](http://www.vim.org), [Emacs](https://www.gnu.org/s/emacs/) 里面的一种或着几种。
 
-必须学习的编辑器 Vim，因为任何 *nix（Linux or Unix）系统中都有这个编辑器，当你登录到服务器上，如果不会这个编辑器，你到服务器上基本上做不了任何事，这个编辑器学习曲线很高，建议用熟了 Atom 或者 Sublime text 后再学习。
+必须学习的编辑器 Vim，因为任何 *nix（Linux or Unix）系统中都有这个编辑器，当你登录到服务器上，如果不会这个编辑器，你基本上做不了任何事，这个编辑器学习曲线很高，建议用熟了 Atom 或者 Sublime text 后再学习。
 
 ### 集成开发环境（IDE）
-集成开发环境配置好了开发需要的一系列工具：编辑器，编译环境，调试器，版本控制等等，IDE 的好处是你不需要做什么配置，可以开箱即用，缺点是隐藏了很多工具的细节，而掌握这些细节对于新手来说又可以更好的使用 IDE，这是 IDE 的一个矛盾点，Python 的 IDE 推荐使用 [PyCharm](https://www.jetbrains.com/pycharm/) ，我经常使用自己喜欢的编辑器来编辑代码，使用 IDE 来做代码重构的任务，我不排斥 IDE，我还是这个观点，用合适的工具解决问题。
+集成开发环境配置好了开发需要的一系列工具：编辑器，编译环境，调试器，版本控制等等，IDE 的好处正是配置好了所有编程相关的工具，缺点是隐藏了很多工具的细节，而掌握这些细节对于新手来说又可以更好的使用 IDE，这是 IDE 的一个矛盾点，Python 的 IDE 推荐使用 [PyCharm](https://www.jetbrains.com/pycharm/) ，我经常使用自己喜欢的编辑器来编辑代码，使用 IDE 来做代码重构的任务，我不排斥 IDE，我还是这个观点，用合适的工具解决问题。
 
 PyCharm 打开代码界面：
 ![pycharm](http://cdn.defcoding.com/B5BBCF95-71A7-4B17-91CF-DCCD93DB03ED.png)
@@ -98,7 +122,7 @@ PyCharm 打开代码界面：
 ### pip（Python 第三方库管理工具）
 前面用 pip 安装过 pyflakes 和 pycodestyle 这两个第三方库，下面详细介绍这个工具。
 
-Python 有许许多多第三方的开源库，你可以免费的使用这些库来解决问题，[pip](https://pip.pypa.io/en/stable/installing/) 是 Python 的第三方库管理工具，可以使用它来搜索、安装、卸载第三方的库。
+Python 有许许多多第三方的开源库，你可以免费的使用这些库来解决遇到的问题，[pip](https://pip.pypa.io/en/stable/installing/) 是 Python 的第三方库管理工具，可以使用它来搜索、安装、卸载第三方的库。
 
 常用命令
 ```
@@ -154,7 +178,7 @@ print 'I am a file'
 ![run file](http://cdn.defcoding.com/64F48BF1-C4ED-40F6-A233-BD8BC6E96794.png.jpeg)
 使用 Iterm2 分屏，左边是 Vim 编辑器，右边是 shell 命令行来运行我们的代码
 
-### 使用示例代码项目
+### 使用示例代码项目提高学习效率
 前面我们下载了本书的 [示例代码项目](https://github.com/runforever/learnpython/archive/master.zip)。
 
 此项目的目录结构：
@@ -163,10 +187,10 @@ print 'I am a file'
 1. 每一个 chapter 目录包含一个 README.md 说明文件。
 2. 每一个 chapter 下的每一小节有 code（示例代码）目录和 exercise（代码练习目录）。
 
-大家可以使用这个项目来作为自己开发测试目录，code 目录查看书中的源代码，exercise 目录中放置书中小作业的代码，如果需要我帮忙审查代码可以在 [GitHub](https://github.com) 提交 Pull Request，具体步骤参考：[开始小项目](/chapter-5/before_the_project.html)
+这个项目可以作为自己开发测试目录，code 目录查看书中的源代码，exercise 目录中放置书中小作业的代码，大家完成作业后，如果需要我帮忙审查代码给予建议的话，可以通过 [GitHub](https://github.com) 提交 Pull Request，具体步骤参考：[开始小项目](/chapter-5/before_the_project.html)
 
 #### 如何测试书中的代码
-先学习 Terminal 中的几个命令。
+先学习 Terminal 的几个命令。
 
 `ls`（list directory）显示目录文件，例如：
 ![ls](http://cdn.defcoding.com/F33DDB33-A55F-4CDC-9D24-EEC06A032694.png)
@@ -189,18 +213,22 @@ print 'I am a file'
 或者，`python learnpython-master/chapter-2/tools/code/atom.py` 直接运行：
 ![python](http://cdn.defcoding.com/624D96DA-B62D-403B-ABC8-1317D714E7B3.png)
 
-Linux 的命令有很多，推荐读者利用 Google 查找资料自学和查看 [《鸟哥的 Linux 私房菜》](https://book.douban.com/subject/4889838/)。
+Linux 的命令有很多，推荐读者利用 Google 查找资料自学和查看 [《鸟哥的 Linux 私房菜》](https://book.douban.com/subject/4889838/) 这本书。
 
 **作业**：使用 Google 学习 `ls`，`cd`，`pwd` 命令的用法。
 
 ### 总结：
-本章说了代码编辑器、pip、 IPython 这几个工具，大家掌握了这几个工具就可以方便的测试书中的代码和完成书中布置的作业了。
+本章主要介绍了：
 
-目标：
+1. 写代码用的代码编辑器。
+2. 管理 Python 第三方库的工具 pip。
+3. 方便学习和测试代码的 IPython。
+4. Terminal 操作的基本命令。
 
-1. 学会 Terminal 目录切换操作。
-2. 学会使用 ipython。
-3. 学会使用 atom 编辑器写代码。
-4. 学会在 Terminal 使用 python 命令运行代码。
+正如开头所说：用好这些工具对提高学习和开发的效率可能会有立竿见影的效果。
 
-最后，学习 Atom 编辑器的方法可以用到学习别的编辑器上，举一反三。
+学习编程离不开使用 Google 等搜索引擎，遇到不会的问题先 Google 上搜索问题，尽可能多的了解搜到的方案，然后思考判断哪个方案的最适合自己的问题。
+
+学习 Atom 编辑器的方法可以用到学习别的工具上，首先，了解工具的作用和工具的基本使用方法，然后，深入的了解工具具备的功能，最后，能根据问题思考判断使用哪个工具解决问题的效率最高。
+
+思考和判断能力是程序员很重要的能力，这两者决定了你的解决方案是否高效和优雅，希望大家在以后的学习和开发中养成思考和判断的习惯。
