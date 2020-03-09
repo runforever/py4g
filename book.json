@@ -1,12 +1,12 @@
 {
   "title": "如何教妹子学Python",
-  "plugins": ["github", "fancybox", "katex", "nocache", "pyshell"],
+  "plugins": ["github", "fancybox", "katex", "nocache", "icp"],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/runforever/py4g/issues"
     },
-    "pyshell": {
-      "apiHost": "http://pyshell.defcoding.com"
+    "icp": {
+      "number": "蜀ICP备16025642号-2"
     }
   },
   "language": "zh-hans"
