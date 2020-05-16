@@ -5,7 +5,7 @@
 ### 什么是程序 Bug
 先看看有史以来的第一个 Bug
 
-![first bug](http://asset.whatslife.cn/1417880421_974670.jpg)
+![first bug](http://cdn.defcoding.com/1417880421_974670.jpg)
 
 人类发现的第一个 Bug 是一只虫子，详细的故事可以去这里查看 [格蕾丝·赫柏](http://baike.baidu.com/view/1018866.htm)。
 
@@ -46,11 +46,11 @@ Python 有 ipython 这个 shell，当然也有功能更丰富的 ipdb 模块，�
 
 * 设置断点
 
-![breakpoint](http://asset.whatslife.cn/breakpoint.gif)
+![breakpoint](http://cdn.defcoding.com/breakpoint.gif)
 
 * 调试命令的使用
 
-![command](http://asset.whatslife.cn/command.gif)
+![command](http://cdn.defcoding.com/command.gif)
 
 **重要提示**：调试完了记得删除断点。
 
